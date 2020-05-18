@@ -1,0 +1,30 @@
+.objective .number{
+    padding: 10px;
+    background-color: #e2000f;
+    color: #fff;
+    font-size: large;
+    max-width: 150px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.objective .item
+{
+    margin: 20px;
+    /* max-width: 300px; */
+    display: flex;
+    border: 1px solid #e2000f;
+}
+
+.objective .txt p
+{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.objective .txt .heading{
+    padding: 10px;
+    background-color: #e2000f;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: large;
+}

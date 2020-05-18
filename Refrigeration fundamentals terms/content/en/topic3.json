@@ -1,0 +1,304 @@
+{
+    "course": {
+        "welcome": "Welcome to",
+        "title": "Refrigeration fundamentals terms",
+        "description": "In this section, we will discuss about pressure and density, few other factors that influence refrigeration cycle.",
+        "duration": "Duration 20 minutes",
+        "start_btn": "start the course",
+        "audio": "media/topic3_welcome.mp3",
+        "button": {
+            "next": "Next",
+            "prev": "Previous",
+            "try": "Try Again",
+            "submit": "Submit"
+        }
+    },
+    "menu": {
+        "topic": [{
+                "title": "Objective ",
+                "file": "common/objective.html",
+                "style": "common/style/objective.css",
+                "audio": "media/topic3_pg1.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["At the end of the module you will be able to:"],
+                    "li": [
+                        "Determine the role of pressure in refrigeration.",
+                        "Define pressure with its unit.",
+                        "Outline how increased vapour pressure increase the vapour density.",
+                        "Describe how any change in temperature affects the density of the refrigerant."
+                    ]
+                }
+            }, {
+                "title": "Pressure",
+                "file": "common/text_image.html",
+                "audio": "media/topic3_pg2.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": [{
+                        "direction": "image_right",
+                        "p": ["Pressure is defined as force per unit area.",
+                            "Unit of force is Newton. ",
+                            "In refrigeration, pressure is associated with the refrigerants that are fluids. A refrigerant in a closed container exerts force on the inner walls of the container. The force of the vapour on the inner surface divided by its area is called the <b>absolute pressure</b>. ",
+                            "<b>Atmospheric Pressure</b>",
+                            "We live on earth surrounded by sea of air and water vapour. Both have weight, and hence a square cm of land, sea, person or any object bears a weight of 1.033 kg. Thus, the atmospheric pressure at sea level is 1.033 kg/cm<sup>2</sup>. Atmospheric pressure is 101.325 kPa = 1.013 bar = 14.5 psi.",
+                            "<b>Gauge Pressure</b>",
+                            "Gauge pressures are pressures above atmospheric pressure. ",
+                            "The unit used should reflect the choice of absolute pressure or gauge pressure. An absolute pressure is indicated by the use of lowercase “a” and a gauge pressure is indicated by a lowercase “g”."
+
+                        ],
+                        "partial": {
+                            "file": "partial/topic3/pressure_c.html",
+                            "width": 500,
+                            "height": 520
+                        }
+                    },
+                    {
+                        "direction": "image_bottom",
+                        "p": [""],
+                        "image": "image/topic3/topic3_graphs.png"
+
+                    },
+                    {
+                        "direction": "text_only",
+                        "p": ["Unit of Pressure",
+                            "<ul><li>US unit of pressure is pund per square inch (psi)</li><li>101.325 kPa = 14.7psi (atmospheric pressure)</li><li>Other units are bar, Pascal, mm Hg</li></ul>",
+                            "Click <a href='partial/topic3/table.html' target='_blank'>here</a> to know more.",
+                            "Example:",
+                            "Absolute pressure of 58psi(a) which converted to gauge pressure becomes (58-14.7) psi(g) = 43.3psi(g). The combination of the SI-unit for pressure (Pa) and the term gauge pressure (g) is not recommended.",
+                            "<div class='formula text_center'>1 Pa = 1 N/m<sup>2</sup><br><br>14.5 psi = 1 X 10<sup>5</sup> Pa = 1 X 10<sup>2</sup> kPa<br><br>Absolute pressure = Gauge pressure + Atmos. pressure</div>"
+                        ]
+                    }
+                ]
+            },
+            {
+                "title": "Good to know",
+                "file": "common/text_image.html",
+                "audio": "media/topic3_pg3.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": [{
+                    "direction": "image_right",
+                    "p": ["Consider the process of melting of ice.",
+                        "It is important to note that the amount of energy that must be transferred to 1 lb of ice in order to melt it is much higher than the energy needed to change the temperature of 1 lb of water by say 1 deg R (Rankine). ",
+                        "The specific heat capacity of water is 1 BTU/lb F. ",
+                        "The energy needed for melting 1 lb of ice is 144 BTU. ",
+                        "The same amount of energy that can melt 1 lb of ice can increase the temperature of 1 lb of water by (144 BTU/1 BTU/lb F) = 144 F."
+                    ],
+                    "image": "image/topic3/topic2_large_ice.png"
+                }]
+            }, {
+                "title": "Check your knowledge",
+                "file": "common/singlecardchoice.html",
+                "style": "common/style/multiplecardchoice.css",
+                "audio": "media/topic3_pg4.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "ques": ["As a rule, liquids expand as they become warmer. Considering this, which of the following is true. "],
+                    "choices": [
+                        "Liquid densities at higher temperatures are less than at lower temperatures.",
+                        "Liquid densities at higher temperatures are more than at lower temperatures.",
+                        "Temperature does not affect density of a liquid.",
+                        "None of the above."
+                    ],
+                    "correct": "1",
+                    "feedback": {
+                        "correct": "That's right!  You selected the correct response.",
+                        "incorrect": "You did not select the correct response. The correct respose is Liquid densities at higher temperatures are less than at lower temperatures.",
+                        "tryagain": "That is incorrect. Please try again."
+                    },
+                    "button": {
+                        "submit": "Submit",
+                        "tryagain": "Try Again"
+                    }
+                }
+            },
+            {
+                "title": "Vacuum",
+                "file": "common/text_image.html",
+                "audio": "media/topic3_pg5.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": [{
+                        "direction": "image_right",
+                        "p": ["Vacuum is defined as an absolute pressure of 0 psi - but since it is impossible to obtain this, the term “vacuum” is used generally to describe a pressure lower than the atmospheric pressure.",
+                            "Vacuum is also often described in ‘microns’. 1 psi equals 51714.92 microns."
+                        ],
+                        "image": "image/topic3/topic3_vacuum.png"
+                    },
+                    {
+                        "direction": "image_bottom",
+                        "p": ["<b>Vapour pressure</b>",
+                            "Pressure of a vapour in equilibrium with its non-vapor phase at certain constant temperature.",
+                            "Liquid in a closed bottle starts evaporating at certain constant temperature. When liquid evaporates and vapour goes up and strikes on the wall of the container they have a tendency to condense (i.e. back to liquid form). This process continues and stops at certain stage due to equilibrium it attains (because of the constant temperature). This pressure of vapour at this stage is called vapour pressure."
+                        ],
+                        "partial": {
+                            "file": "partial/topic3/Vacuum_c.html",
+                            "width": 820,
+                            "height": 420
+                        }
+                    },
+                    {
+                        "direction": "image_bottom",
+                        "p": ["<b>Temperature and Vapour pressure</b>"],
+                        "partial": {
+                            "file": "partial/topic3/boiling_vs_pressure_c.html",
+                            "width": 790,
+                            "height": 430
+                        }
+                    }
+                ]
+            }, {
+                "title": "Practice Session",
+                "file": "common/dropdown.html",
+                "style": "common/style/dropdown.css",
+                "audio": "media/topic3_pg6.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["Now let us try to do some practice. Choose the correct answers from dropdown."],
+                    "interaction": {
+                        "ques": "",
+                        "choice": [{
+                                "text": "14.7 psi (atm pressure) = ",
+                                "unit": "Kpa",
+                                "options": [{
+                                    "text": "1013",
+                                    "correct": false
+                                }, {
+                                    "text": "101.3",
+                                    "correct": true
+                                }, {
+                                    "text": "10.13",
+                                    "correct": false
+                                }]
+                            },
+                            {
+                                "text": "420.6 psi (absolute pressure) = ",
+                                "unit": "psi(g)",
+                                "options": [{
+                                    "text": "290.120",
+                                    "correct": false
+                                }, {
+                                    "text": "350.150",
+                                    "correct": false
+                                }, {
+                                    "text": "406.106",
+                                    "correct": true
+                                }]
+                            },
+                            {
+                                "text": "5 pa = ",
+                                "unit": "N/m<sup>2</sup>",
+                                "options": [{
+                                    "text": "5",
+                                    "correct": true
+                                }, {
+                                    "text": "50",
+                                    "correct": false
+                                }, {
+                                    "text": "500",
+                                    "correct": true
+                                }]
+                            }, {
+                                "text": "43.5 psi (absolute pressure) = ",
+                                "unit": "K pa",
+                                "options": [{
+                                    "text": "300",
+                                    "correct": true
+                                }, {
+                                    "text": "30",
+                                    "correct": false
+                                }, {
+                                    "text": "3",
+                                    "correct": false
+                                }]
+                            }, {
+                                "text": "Absolute Pressure - Atm Pressure = ",
+                                "unit": "",
+                                "options": [{
+                                    "text": "Absolute Pressure",
+                                    "correct": false
+                                }, {
+                                    "text": "Atm Pressure",
+                                    "correct": false
+                                }, {
+                                    "text": "Gauge Pressure",
+                                    "correct": true
+                                }]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "title": "Density",
+                "file": "common/text_image.html",
+                "audio": "media/topic3_pg7.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": [{
+                    "direction": "text_only",
+                    "p": ["Liquids vary in their density.",
+                        "Density of fluid is defined as its mass per unit volume Indicated by symbol ρ",
+                        "<div class='formula text_center'>ρ = m/V</div>",
+                        "<div class='formula text_center'>SI unit =  kg/m<sup>3</sup></div>",
+                        "<b>Specific Volume</b>",
+                        "Specific volume is the volume occupied by a unit of mass of a material. The specific volume of a substance is equal to the reciprocal of its mass density.",
+                        "Indicated by symbol <span class='formula_font'>&nu;</span>",
+                        "<div class='formula text_center'>&nu; = V/m</div>",
+                        "<div class='formula text_center'>SI unit =  m<sup>3</sup>/kg</div>",
+                        "Density (ρ) or specific volume (<span class='formula_font'>&nu;</span> = 1/ρ) of a refrigerant influences pressure drop throughout the refrigerant circuit as well as the compressor capacity."
+                    ]
+                }]
+            },
+            {
+                "title": "Boiling point",
+                "file": "common/text_anim_bottom.html",
+                "audio": "media/topic3_pg8.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["The boiling point of a substance is the temperature at which the vapour pressure of the liquid equals the environmental pressure surrounding the liquid.",
+                        "Boiling point depends upon the environmental pressure.",
+                        "A liquid in a vacuum environment has lower boiling point than a liquid in a high atmospheric pressure.",
+                        "Boiling point varies from substance to substance.",
+                        "For example, boiling point of water is 212°F @ 1bar atmospheric pressure and boiling point of refrigerant R134a is -15.3°F @ 14.5psi atmospheric pressure."
+                    ]
+                },
+                "image": "",
+                "partial": {
+                    "file": "partial/topic3/ex-nature_c.html",
+                    "width": 825,
+                    "height": 470
+                }
+            }, {
+                "title": "Recap ",
+                "file": "common/recap.html",
+                "style": "common/style/objective.css",
+                "audio": "media/topic3_pg9.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["Let is recall"],
+                    "li": [
+                        "Pressure is defined as the force exerted on an area. The SI unit of pressure is Pascal (Pa = N/m<sup>2</sup>). ",
+                        "The force of the vapour on the inner surface divided by its area is called the Absolute Pressure.",
+                        "Gauge pressures are pressures above atmospheric pressure. ",
+                        "Vacuum is defined as an absolute pressure of 0 bar, in general it is described as pressure lower than the atmospheric pressure.",
+                        "Vapour pressure is the pressure of a vapour in equilibrium with its non-vapor phase at certain constant temperature.",
+                        "Density of fluid is defined as its mass per unit volume indicated by symbol ρ. The SI unit of density is kg/m<sup>3</sup>.",
+                        "The boiling point of a substance is the temperature at which the vapour pressure of the liquid equals the environmental pressure surrounding the liquid."
+                    ],
+                    "info": {
+                        "title": "Alert",
+                        "text": "Please complete all pages to view the recap and complete the course."
+                    }
+                }
+            }
+        ]
+    }
+
+}

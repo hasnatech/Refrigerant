@@ -1,0 +1,25 @@
+.objective {
+    background-image: url('../../../image/shell/objective_bg.jpeg');
+    background-position: right bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* margin: 50px; */
+    height: calc(100vh - 100px);
+}
+
+#obj_panel {
+    background-color: #fff;
+    max-width: 600px;
+    padding: 40px 50px;
+    margin: 50px auto 20px;
+}
+
+.hideNav .objective {
+    height: calc(100vh - 41px);
+}
+
+@media (max-width:700px) {
+    #obj_panel {
+        margin: 10% 10px 10px 10px;
+    }
+}

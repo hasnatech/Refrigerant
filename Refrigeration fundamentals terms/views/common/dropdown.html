@@ -1,0 +1,64 @@
+<section class="sec" data-current="{{curr_page}}">
+	<div class="container_full">
+		<div class="init_padding">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="animate">
+						<h2>{{page.title}}</h2>
+						<hr class="hr_width">
+					</div>
+					<div class="animate dropdown">
+						<p ng-repeat="item in page.text.p">{{item}}</p>
+
+						<div class="choices">
+							<div class="choice" ng-repeat="ch in page.text.interaction.choice">
+								<div class="text">
+									<div class="min_100"> {{$index+1}}. {{ch.text}}</div>
+									<select class="dd_select">
+										<option value="none"><div class="pad_10">Select One</div></option>
+										<option ng-repeat="i in ch.options"
+										value="{{i.correct}}"
+											>{{i.text}}</option>
+									</select>
+									<span ng-bind-html="ch.unit | to_trusted"></span>
+									<div class="response">
+										<img id="correct" src="image/shell/correct.png" alt="correct">
+										<img  id="wrong" src="image/shell/wrong.png" alt="wrong">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+
+<script>
+	$().ready(function () {
+		animate();
+		$(".response").hide();
+		$(".dd_select").change(function(){
+			var img = $(this).parent().find(".response");
+			img.show();
+			var correct = img.find("#correct");
+			var wrong = img.find("#wrong");
+			correct.hide();
+			wrong.hide();
+			if($(this).val() == "true")
+			{
+				correct.show();
+				//img.attr("src", "image/topic2/correct.png")
+			}else if($(this).val() == "false")
+			{
+				wrong.show();
+				//img.show();
+				//img.attr("src", "image/topic2/wrong.png")
+			}else
+			{
+				img.hide();
+			}
+		});
+		showNext(default_delay);
+	});
+</script>

@@ -1,0 +1,43 @@
+.tab .title ul li {
+    display: inline-block;
+    border: 2px solid #869098;
+    padding: 10px 30px;
+    margin-right: 1px;
+    font-size: medium;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background-color: #869098;
+    color: #fff;
+}
+.tab .title ul li.active
+{
+    background-color: #E2000F;
+    border-color: #E2000F;
+    color: #fff;
+}
+.tab .title ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+.tab .body {
+    border: 2px solid #E2000F;
+    margin-top: -9px;
+    padding: 0px 40px;
+    min-height: 400px;
+    transition: all 0.3s ease;
+}
+
+.tab .body>div {
+    display: none;
+}
+
+.tab .title .icon {
+    width: 45px;
+    margin: 0px auto;
+}
+
+.tab .title .txt 
+{
+    padding-top: 10px;
+}

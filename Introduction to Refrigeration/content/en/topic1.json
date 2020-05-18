@@ -1,0 +1,176 @@
+{
+    "course": {
+        "welcome": "Welcome to Danfoss",
+        "title": "Introduction to Refrigeration",
+        "topic": "",
+        "description": "This module will discuss the overall purpose of the e-learning course and also provide an introduction to Refrigeration. This will need 12 minutes to complete.",
+        "start_btn": "start the course",
+        "audio" : "media/topic1_welcome.mp3"
+    },
+    "menu": {
+        "topic": [{
+                "title": "Objective ",
+                "file": "common/objective.html",
+                "style": "common/style/objective.css",
+                "audio": "media/topic1_pg1.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["At the end of this topic, you will be able to:"],
+                    "li": [
+                        "Define refrigeration and cooling",
+                        "List the application of refrigeration in household and industries",
+                        "Analyse how time and temperature influences the growth of micro-organisms in food"
+                    ]
+                }
+            }, {
+                "title": "Refrigeration",
+                "file": "common/text_image_right.html",
+                "audio": "media/topic1_pg2.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["Cold beverages and ice creams are our favourite treats during summer. ",
+                        "We all know that refrigeration is the best way to keep things cool and fresh.",
+                        "We will explore more about Refrigeration in this module."
+                    ]
+                },
+                "image": "image/topic1/ref_t1_p3.jpg"
+            },
+            {
+                "title": "Why refrigerate?",
+                "file": "common/text_image_right.html",
+                "audio": "media/topic1_pg3.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["Refrigeration reduces the temperature of a substance by removing energy - in the form of heat.",
+                        "Cold beverages and ice creams in refrigerator. It is cool.",
+                        "<b>Cooling:</b>",
+                        "A natural or an artificial process by which heat is dissipated. "
+                    ]
+
+                },
+                "image": "image/topic1/t1_page4.jpg"
+            }, {
+                "title": "What happens during refrigeration? ",
+                "file": "common/text_anim_right.html",
+                "audio": "media/topic1_pg4.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["The primary purpose of refrigeration is to lower the temperature of the enclosed space or substance, and then maintain that low temperature."
+                    ]
+                },
+                "image": "",
+                "partial" : {
+                    "file" : "partial/topic1/fruits_temp_HTML5 Canvas4.html",
+                    "width" : 400,
+                    "height" : 250
+                }
+            },
+            {
+                "title": "Why do we need to lower the temperature?",
+                "file": "common/flipcard.html",
+                "style": "common/style/flipcard.css",
+                "audio": "media/topic1_pg5.mp3",
+                "showMenu": true,
+                "interaction": true,
+                "text": {
+                    "t": ["Click the next / previous arrow  to learn more about effects of lowering the temperature:"],
+                    "interactivity": [{
+                        "text": "",
+                        "image": "image/topic1/flip_1.jpg",
+                        "reveal": "Reduces the growth of micro-organisms in food."
+                    }, {
+                        "text": "",
+                        "image": "image/topic1/flip_2.jpg",
+                        "reveal": "Secures proper functioning of machinery in manufacturing industry and large computers."
+                    }, {
+                        "text": "",
+                        "image": "image/topic1/flip_3.jpg",
+                        "reveal": "Air conditioner make  our lives comfortable."
+                    }, {
+                        "text": "",
+                        "image": "image/topic1/flip_4.jpg",
+                        "reveal": "Prevent chemical reactions in the appliances used in medical care units."
+                    }]
+                }
+            },
+            {
+                "title": "How refrigeration affect the growth of microorganisms in food?",
+                "file": "common/accordion.html",
+                "style": "common/style/accordion.css",
+                "audio": "media/topic1_pg6.mp3",
+                "showMenu": true,
+                "interaction": true,
+                "text": {
+                    "t": ["Click the below items to learn more."],
+                    "interactivity": [{
+                        "title": "Growth of Microorganisms",
+                        "icon": "image/icon_1.png",
+                        "image": "image/topic1/refrigeration_t1_tt.png",
+                        "reveal": "<p>The rate of growth of microorganisms in food depends on temperature and time.</p>"
+                    }, {
+                        "title": "Bacterial Growth",
+                        "icon": "image/icon_2.png",
+                        "image": "image/topic1/refrigeration_t1_t2.png",
+                        "reveal": "<p>The growth of microorganisms can be controlled by controlling temperature.</p>"
+                    }, {
+                        "title": "Low at Temprature",
+                        "icon": "image/icon_3.png",
+                        "image": "image/topic1/refrigeration_t1_t3.png",
+                        "reveal": "<p>The growth of microorganisms becomes very slow at temperatures below +50°F.</p><p>Hence, refrigeration is used to store foods fresher and to keep ice creams chiller.</p>"
+                    }]
+                }
+            }, {
+                "title": "Check your knowledge",
+                "file": "common/multiplechoice.html",
+                "style": "common/style/quiz.css",
+                "audio": "media/topic1_pg7.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "ques": ["Which of the following statements are true?"],
+                    "choices": [
+                        "Lower temperature slows the growth of microorganism already in food.",
+                        "Perishable food will deteriorate even at refrigerator temperatures.",
+                        "Lowering temperature destroys pathogenic or spoilage microorganisms",
+                        "Time and temperature are important factors in the growth of microorganism in food."
+                    ],
+                    "correct" : "1,2,4",
+                    "feedback" :{
+                        "correct":"That's right!  You selected the correct response.",
+                        "incorrect" : "You did not select the correct response. The correct resposes are Lower temperature slows the growth of microorganism already in food, Perishable food will deteriorate even at refrigerator temperatures, &amp; Time and temperature are important factors in the growth of microorganism in food.",
+                        "tryagain" : "That is incorrect. Please try again."
+                    } ,
+                    "button" : {
+                        "submit" : "Submit",
+                        "tryagain" : "Try Again"
+                    } 
+                }
+            },{
+                "title": "Recap ",
+                "file": "common/recap.html",
+                "style": "common/style/objective.css",
+                "audio": "media/topic1_pg8.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["Let us recall:"],
+                    "li": [
+                        "Refrigeration is a process to reduce temperatures by removing energy - in the form of heat.",
+                        "Cooling refers to any natural or artificial process by which heat is dissipated. ",
+                        "Refrigeration prevents the growth of microorganisms and finds application in household and industries. ",
+                        "Temperature and time affects the growth of microorganism, hence by controlling temperature the growth of microorganism is controlled."
+                    ],
+                    "info" :{
+                        "title":"Alert",
+                        "text" : "Please complete all pages to view the recap and complete the course."
+                    } 
+                }
+            }
+        ]
+    }
+
+}

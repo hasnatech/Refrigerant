@@ -1,0 +1,26 @@
+.static_width
+{
+    
+    overflow: auto;
+
+}
+table.tb
+{
+    font-family: 'Roboto', sans-serif;
+}
+
+table.tb tr td {
+    padding: 5px;
+    text-align: center;
+}
+
+table.tb tr {
+    margin: 0px;
+}
+table.tb tr:nth-child(1) td, table tr td:nth-child(1)  {
+    background: #b4d6ff;
+}
+.highlight
+{
+    background-color: #ffe000;
+}

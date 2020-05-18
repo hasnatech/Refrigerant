@@ -1,0 +1,34 @@
+<section class="sec" data-current="{{curr_page}}">
+	<div class="container_full">
+		<div class="init_padding animate">
+			<p class="page_no">Page {{curr_page+1}} of {{total_page}}</p>
+			<h2>{{pageTitle}}</h2>
+			<hr class="hr_width">
+		</div>
+		<div class="init_padding ">
+			<div class="animate">
+				<div ng-repeat="item in text.p">
+					<p ng-bind-html="item | to_trusted"></p>
+				</div>
+			</div>
+			<!--<div ng-if="currentTopic.partial" ng-include="currentTopic.partial"></div>-->
+			<div class="text-center animate">
+				<iframe class="no-border width_100" ng-if="currentTopic.partial" width="{{currentTopic.partial.width}}" height="{{currentTopic.partial.height}}"
+				    ng-src="{{currentTopic.partial.file}}"></iframe>
+			</div>
+			<img ng-src="{{image}}" ng-if="image" class="width_100 top_20 animate" alt="">
+			<div class="bottom_nav default_delay">
+				<button ng-click="next()" class="btn btn-round-radius btn_red">Next</button>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<script>
+	$().ready(function () {
+		
+		animate();
+		showNext($(".default_delay"), default_delay);
+	});
+</script>

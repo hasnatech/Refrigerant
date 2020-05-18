@@ -1,0 +1,69 @@
+<section class="sec" data-current="{{curr_page}}">
+    <div class="container_full">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="init_padding animate">
+                    <p class="page_no">Page {{curr_page+1}} of {{total_page}}</p>
+                    <h2>{{pageTitle}}</h2>
+                    <hr class="hr_width">
+                </div>
+                <div class="init_padding ">
+                    <p ng-repeat="item in text.t">{{item}}</p>
+                    <div class="float_left" ng-repeat="item in text.interactivity">
+                        <div class="card-container animate">
+                            <div class="card">
+                                <div class="side top">
+                                    <img ng-src="{{item.image}}" alt="{{item.reveal}}">
+                                </div>
+                                <div class="side back">{{item.reveal}}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class="bottom_nav">
+                        <button ng-click="next()" class="btn btn-round-radius btn_red">Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $().ready(function () {
+        var next_appears = false;
+        animate();
+        $(".bottom_nav").fadeOut();
+        if (GetIEVersion() > 0) {
+            $(".card .back").css("transform", "none");
+            $(".card .back").hide();
+        }
+
+        $(".card").click(function () {
+            if (GetIEVersion() > 0) {
+                $(".card .top").show();
+                $(".card .back").hide();
+
+                $(this).find(".top").toggle();
+                $(this).find(".back").toggle();
+
+            } else {
+                $(".card").removeClass("active");
+                $(this).addClass("active");
+            }
+
+            $(this).data("clicked", true);
+            var finish_count = 0;
+            $(".card").each(function () {
+                if ($(this).data("clicked") == true) {
+                    finish_count++;
+                }
+                if (finish_count == $(".card").length && next_appears == false) {
+                    appear($(".bottom_nav"), 1000);
+                    next_appears = true;
+                    pageCompleted($(".sec").data("current"));
+                }
+            });
+        });
+    });
+</script>

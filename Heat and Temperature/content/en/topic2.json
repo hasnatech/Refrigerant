@@ -1,0 +1,452 @@
+{
+    "course": {
+        "welcome": "Welcome to",
+        "title": "Heat and Temperature",
+        "description": "In this section, we will define heat and temperature, their properties, unit and measurement.",
+        "duration" : "Duration 20 minutes",
+        "start_btn": "start the course",
+        "audio": "media/topic2_welcome.mp3",
+        "button": {
+            "next": "Next",
+            "prev": "Previous",
+            "try": "Try Again",
+            "submit": "Submit"
+        }
+    },
+    "menu": {
+        "topic": [{
+                "title": "Objective ",
+                "file": "common/objective.html",
+                "style": "common/style/objective.css",
+                "audio": "media/topic2_pg1.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["At the end of the module you will be able to:"],
+                    "li": [
+                        "Differentiate heat and temperature.",
+                        "Identify different scales used for measuring temperature.",
+                        "Convert temperature across different scales using formulas.",
+                        "List the effects of heat transfer.",
+                        "Define properties of matter that are related to heat transfer."
+                    ]
+                }
+            }, {
+                "title": "Introduction to heat and temperature",
+                "file": "common/text_image_right.html",
+                "audio": "media/topic2_pg2.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["Often heat and temperature are thought of as the same thing, however they are different. ",
+                        "All matter is made up of molecules. On supplying heat, molecules in the substance starts moving faster. ",
+                        "<b>Heat</b> is the total energy of molecular motion in a substance.",
+                        "<b>Temperature</b> is a measure of the average energy of molecular motion in a substance.",
+                        "Let us learn to measure heat and temperature in this section."
+                    ]
+                },
+                "image": "image/topic2/page2.jpg"
+            }, {
+                "title": "Check your knowledge",
+                "file": "common/multiplecardchoice.html",
+                "style": "common/style/multiplecardchoice.css",
+                "audio": "media/topic2_pg3.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "ques": ["Select the correct statement about the cup of coffee and a bathtub from the list below."],
+                    "choices": [
+                        "Water in the bath tub has more thermal energy or heat because it has more water molecules",
+                        "Temperature of water in the bath tub and the cup is the same",
+                        "Temperature of water in the bathtub and the coffee in the cup are different while thermal energy remains same."
+                        
+                    ],
+                    "correct": "1,2",
+                    "feedback": {
+                        "correct": "That's right!  You selected the correct response.",
+                        "incorrect": "You did not select the correct response. The correct response are Water in the bath tub has more thermal energy or heat because it has more water molecules, Temperature of water in the bath tub and the cup is the same.",
+                        "tryagain": "That is incorrect. Please try again."
+                    },
+                    "button": {
+                        "submit": "Submit",
+                        "tryagain": "Try Again"
+                    }
+                }
+            },
+            {
+                "title": "Measuring Temperature",
+                "file": "common/text_image.html",
+                "audio": "media/topic2_pg4.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": [{
+                        "direction": "image_right",
+                        "p": ["Temperature is the measure of average kinetic energy of the molecules. Temperature is measured using thermometer. Two most widely used temperature scales are Fahrenheit and Celsius. ",
+                            "The SI-unit of measuring temperature is Kelvin [K] also known as the absolute scale. The reference point of this scale is the absolute zero of temperature.",
+                            "More practical unit for measuring temperature is degree Celsius [°C], also known as centigrade scale. There are two reference points. One is the freezing point of pure water (at normal pressure), taken as zero, 0°C, of the scale. The other point, taken as 100°C, corresponds to the point when pure water boils (again, under normal pressure.",
+                            "Fahrenheit (°F) is an other unit of temperature, which is commonly used in USA. One of the reference point, 32°F, corresponds to water freezing."
+                        ],
+                        "image": "image/topic2/thermometer.png"
+                    },
+                    {
+                        "direction": "text_only",
+                        "p": ["<b>Converting between temperature scales</b>",
+                            "<div class='row'><div class='col-md-3 col-sm-6 bottom_20'>Celsius to Kelvin <div class='formula'> °K = °C + 273 K</div></div><div class='col-md-3 col-sm-6 bottom_20'>Kelvin to Celsius <div class='formula'> °C  = °K - 273.15 K</div></div><div class='col-md-3 col-sm-6 bottom_20'>Celsius to Farenheit <div class='formula'> °F  = (1.8 X °C) + 32 </div></div><div class='col-md-3 col-sm-6 bottom_20'>Farenheit to Celsius <div class='formula'> °C  = (°F  - 32) / 1.8 </div></div></div>"
+                        ]
+                    }
+                ]
+            }, {
+                "title": "Temperature",
+                "file": "common/text_anim_bottom.html",
+                "audio": "media/topic2_pg5.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["Temperature of boiling water in different scales"]
+                },
+                "image": "",
+                "partial": {
+                    "file": "partial/topic2/boiling_water.html",
+                    "width": 820,
+                    "height": 420
+                }
+            }, {
+                "title": "Practice Session",
+                "file": "common/dropdown.html",
+                "style": "common/style/dropdown.css",
+                "audio": "media/topic2_pg6.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["Now let us try to do some practice. Choose the correct answers from dropdown."],
+                    "interaction": {
+                        "ques": "",
+                        "choice": [{
+                                "text": "10 ºC = ",
+                                "unit": "ºF",
+                                "options": [{
+                                    "text": "50",
+                                    "correct": true
+                                }, {
+                                    "text": "75",
+                                    "correct": false
+                                }, {
+                                    "text": "45",
+                                    "correct": false
+                                }]
+                            },
+                            {
+                                "text": "373.15 K = ",
+                                "unit": "ºF",
+                                "options": [{
+                                    "text": "100",
+                                    "correct": false
+                                }, {
+                                    "text": "212",
+                                    "correct": true
+                                }, {
+                                    "text": "373",
+                                    "correct": false
+                                }]
+                            },
+                            {
+                                "text": "0 ºF = ",
+                                "unit": "K",
+                                "options": [{
+                                    "text": "373.15",
+                                    "correct": false
+                                }, {
+                                    "text": "212",
+                                    "correct": false
+                                }, {
+                                    "text": "255.37",
+                                    "correct": true
+                                }]
+                            }, {
+                                "text": "0 K = ",
+                                "unit": "ºF",
+                                "options": [{
+                                    "text": "-450.25",
+                                    "correct": false
+                                }, {
+                                    "text": "-459.67",
+                                    "correct": true
+                                }, {
+                                    "text": "0",
+                                    "correct": false
+                                }]
+                            }, {
+                                "text": "212 ºF = ",
+                                "unit": "ºC",
+                                "options": [{
+                                    "text": "100",
+                                    "correct": true
+                                }, {
+                                    "text": "212",
+                                    "correct": false
+                                }, {
+                                    "text": "98",
+                                    "correct": false
+                                }]
+                            }, {
+                                "text": "Absolute Zero = ",
+                                "unit": "ºC",
+                                "options": [{
+                                    "text": "-100",
+                                    "correct": true
+                                }, {
+                                    "text": "-273",
+                                    "correct": false
+                                }, {
+                                    "text": "0",
+                                    "correct": false
+                                }]
+                            }
+                        ]
+                    }
+                }
+            },
+            {
+                "title": "Heat Transfer",
+                "file": "common/text_anim_right.html",
+                "audio": "media/topic2_pg7.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["Heat a bowl of water on a hot plate. The thermal energy or heat is transferred from the body at higher temperature that is the hot plate, to the body at lower temperature here, to the water in the bowl. ",
+                        "This causes raise the temperature of water.",
+                        "<b>What do we infer?</b>",
+                        "Heat transfer always occurs  from a medium at higher temperature to the one at lower temperature. Heat is transferred until both the medium attains equilibrium or same temperature."
+                    ]
+                },
+                "image": "",
+                "partial": {
+                    "file": "partial/topic2/heat.html",
+                    "width": 400,
+                    "height": 380
+                }
+            },
+            {
+                "title": "Effects of heat Transfer",
+                "file": "common/text_anim_right.html",
+                "audio": "media/topic2_pg8.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["<b>Increase in temperature</b>",
+                        "On adding heat to a substance, the molecules in them starts moving rapidly. And, as the molecules start moving faster or accelerate, the temperature of the substance increase. ",
+                        "Temperature depends on kinetic energy of the particle."
+                    ]
+                },
+                "image": "",
+                "partial": {
+                    "file": "partial/topic2/molecule_property_c.html",
+                    "width": 400,
+                    "height": 380
+                }
+            },
+            {
+                "title": "Effects of heat Transfer",
+                "file": "common/text_image.html",
+                "audio": "media/topic2_pg9.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": [{
+                        "direction": "image_right",
+                        "p": ["<b>Decrease in temperature</b>", "So to cool an object say a hot pan, we need another object (ice) much cooler than this hot pan. On keeping the hot pan on a block of ice, in contact with each other, there is heat transfer between them. Heat flows from the object at higher temperature (hot pan) to the object at lower temperature (ice). ",
+                            "The temperature of the hot pan decreases, because heat is transferred from the hot pan to the ice block. "
+                        ],
+                        "image": "image/topic2/hot_pan.png"
+                    }
+                ]
+            },
+            {
+                "title": "Phase change ",
+                "file": "common/text_image.html",
+                "audio": "media/topic2_pg10.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": [{
+                        "direction": "image_bottom",
+                        "p": ["On supplying heat to a substance under constant pressure, the kinetic energy of the molecules or atom increases and as a result the distance between them increases. This leads to change of phase of the substance.",
+                            "To understand that matter exists in all states and can also change state, let us take a simple example of water. ",
+                            "Water exists in three states:",
+                            "<ul><li>Solid - Ice</li><li>Liquid - Water</li><li>Vapour – Steam</li></ul>"
+                            
+                        ],
+                        "image": "image/topic2/3_state.png"
+                    },{
+                        "direction": "text_only",
+                        "p": ["Individual molecules of water (H2O) remain common in all the phases. Phase of a substance depends on the balance between the kinetic energy of the individual particles and the intermolecular forces. Heating and cooling can change the kinetic energy of the particle and hence changes the state of a substance.",
+                            "In solids the atoms are closely packed. On supplying heat to a ice block, the molecules starts moving rapidly. As the molecules accelerate, the substance becomes less orderly until the stored energy exceeds the stabilization energy of the solid arrangement. The molecules break free of the lattice to change to liquid state.",
+                            "The phase change from solid to liquid is called ‘melting’. "
+                        ],
+                        "image": ""
+                    }
+                ]
+            },{
+                "title": "Phase change",
+                "file": "common/text_image.html",
+                "audio": "",
+                "showMenu": true,
+                "interaction": false,
+                "text": [
+                    {
+                        "direction": "image_bottom",
+                        "p": [""],
+                        "image": "",
+                        "partial": {
+                            "file": "partial/topic2/phase_change_c.html",
+                            "width": 680,
+                            "height": 430
+                        }
+                    }
+                ]
+            }, {
+                "title": "Check your knowledge",
+                "file": "common/truefalse.html",
+                "style": "common/style/truefalse.css",
+                "audio": "media/topic2_pg11.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "ques": ["Temperature does not have to do with the number of molecules involved. Select True or False."],
+                    "choices": [
+                        "True",
+                        "False"
+                    ],
+                    "correct": "1",
+                    "feedback": {
+                        "correct": "That's right!  You selected the correct response.",
+                        "incorrect": "You did not select the correct response. The correct response is true.",
+                        "tryagain": "That is incorrect. Please try again."
+                    },
+                    "button": {
+                        "submit": "Submit",
+                        "tryagain": "Try Again"
+                    }
+                }
+            },
+            {
+                "title": "Measure of heat transfer",
+                "file": "common/text_anim_right.html",
+                "audio": "media/topic2_pg12.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["Heat is represented using the symbol Q and is expressed in British Thermal Units (BTU) in SI unit, which is the unit of energy. ",
+                        "Heat transfer to or from a substance depends on:",
+                        "<ul><li>Change in temperature of the substance.</li><li>Mass of the substance.</li><li>Certain physical properties related to the phase of the substance.</li></ul>",
+                        "<b>Specific heat</b>",
+                        "Specific heat is one of the physical property of the substance that determine the amount of heat transfer. It is the heat required to raise a unit mass of a substance by one degree temperature. ",
+                        "Different materials heat up at different rates. ",
+                        "Specific heat of water is five times that of glass, which means that it takes five times as much heat to raise the temperature of 1 lb. of water than to raise the temperature of 1 lb of glass by the same number of degrees.",
+                        "Substances with high specific heat capacities take a lot of heat energy and therefore a long time to heat up and also a long time to cool down. ",
+                        "The unit of specific heat capacity is BTU/degF/lb",
+                        "<b>BTU defined</b>",
+                        "BTU is defined as the amount of heat required to raise the temperature of one pound of water by one degree Fahrenheit"
+                    ]
+                },
+                "image": "",
+                "partial": {
+                    "file": "partial/topic2/joule_c.html",
+                    "width": 400,
+                    "height": 380
+                }
+            },
+            {
+                "title": "Latent heat",
+                "file": "common/text_anim_bottom.html",
+                "audio": "media/topic2_pg13.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["Amount of energy released or absorbed by a substance that causes change of phase at constant temperature. ",
+                        "Let us take an example to understand this better. Take water at 212 ºF or 100 ºC, which is further heated. On adding more heat, the water turns to steam (gas state) but the temperature remains constant 212 ºF.",
+                        "The heat added to the water causes change of phase and is hidden from the thermometers is called the latent heat."
+                    ]
+                },
+                "image": "",
+                "partial": {
+                    "file": "partial/topic2/latent_heat_c.html",
+                    "width": 580,
+                    "height": 420
+                }
+            },
+            {
+                "title": "Superheat",
+                "file": "common/text_anim_bottom.html",
+                "audio": "media/topic2_pg14.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["Say we have heated it to the extent that all the water has changed to gas or vapour (steam). Now on adding more heat to the vapourized water or steam will cause an increase in temperature of the steam to above its boiling temperature of 212ºF.  Any increase in temperature of the steam above its boiling point 212ºF is called “<b>superheat</b>”.",
+                        "Steam at 213.8°F is superheated by 1.8°F.",
+                        "Let us take an example of a refrigerant liquid that boils at 35.2°F. On supplying heat, the refrigerant changed from liquid to gas or vapour at 35.2°F. On heating further, the refrigerant vapour increased in temperature to 41.2°F. Now, the refrigerant is said to be superheated by 1.8°F."
+                    ]
+                },
+                "image": "",
+                "partial": {
+                    "file": "partial/topic2/super_heat_c.html",
+                    "width": 760,
+                    "height": 420
+                }
+            },
+            {
+                "title": "Subcooling",
+                "file": "common/text_anim_right.html",
+                "audio": "media/topic2_pg15.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["<ul><li>Subcooling is when a liquid is cooled below the temperature at which it turns into a liquid. Subcooling is any temperature of a liquid or solid below its saturation temperature.</li><li>Only liquid and solid can be sub-cooled.</li><li>Liquid water at sea level has a saturation (boiling) temperature of 212°F.</li><li>On removing heat from water at 212°F, its temperature will drop below its boiling (saturation) temperature.</li><li>Water at 210.2°F has been subcooled by 1.8°F.</li></ul>",
+                            "<b>Example:</b>",
+                            "Say a refrigerant is a 284°F vapor heading into the condenser. Once the condenser cools the refrigerant to 248°F, it will begin to turn back into a liquid. If the condenser brings the refrigerant temperature down to 221°F , it has been subcooled by 27°F.",
+                            "Subcooling is an important concept in refrigeration."
+                    ]
+                },
+                "image": "",
+                "partial": {
+                    "file": "partial/topic2/subcooling.html",
+                    "width": 550,
+                    "height": 380
+                }
+            }, {
+                "title": "Latent heat, Superheat and Subcooling",
+                "file": "common/text_image.html",
+                "audio": "",
+                "showMenu": true,
+                "interaction": false,
+                "text": [
+                    {
+                        "direction": "image_bottom",
+                        "p": [""],
+                        "image": "",
+                        "partial": {
+                            "file": "partial/topic2/latent_super_c.html",
+                            "width": 730,
+                            "height": 400
+                        }
+                    }
+                ]
+            }, {
+                "title": "Recap ",
+                "file": "common/plain_recap.html",
+                "audio": "media/topic2_pg16.mp3",
+                "showMenu": true,
+                "interaction": false,
+                "text": {
+                    "p": ["Here is a recap.",
+                        "<ul><li><b>Heat</b> is the total energy of molecular motion in a substance.</li><li><b>Temperature</b> is a measure of the average energy of molecular motion in a substance.</li><li>Three temperature scales we discussed  are Fahrenheit, Celsius and Kelvin.</li><li>Heat is expressed in British Thermal Units (BTU) in SI unit, which is the unit of energy.</li><li>Heat transfer to or from a substance depends on:<ul><li>Change in temperature of the substance.</li><li>Mass of the substance.</li><li>Certain  physical properties related to the phase of the substance which is specific heat of the substance.</li></ul></li><li>Latent heat is the heat used for change of state of a substance.</li><li>Subcooling and Superheat are some of the important topics related to refrigeration.</li></ul>"
+                        ],
+                    "li": [],
+                    "info": {
+                        "title": "Alert",
+                        "text": "Please complete all pages to view the recap and complete the course."
+                    }
+                }
+            }
+        ]
+    }
+
+}

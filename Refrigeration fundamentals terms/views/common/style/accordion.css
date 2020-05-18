@@ -1,0 +1,27 @@
+.accordion .title {
+    max-width: 500px;
+    border: 2px solid #869098;
+    padding: 10px 30px;
+    margin: 1px;
+    font-size: medium;
+    cursor: pointer;
+    transition:  background-color 0.3s ease-out;
+    background-image: url('../../../image/shell/plus.png');
+    background-position: 98% 50%;
+    background-repeat: no-repeat;
+    background-color: #869098;
+    color: #fff;
+}
+
+.accordion .title.active {
+    background-image: url(../../../image/shell/minus.png);
+    background-color: #B6000F;
+    border-color: #B6000F;
+    color: #fff;
+}
+
+.accordion .body {
+    border: 2px solid #B6000F;
+    padding: 0px 40px;
+    display: none;
+}

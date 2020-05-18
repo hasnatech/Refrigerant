@@ -1,0 +1,110 @@
+.ch {
+    /* float: left; */
+    position: absolute;
+    padding: 8px 15px;
+    background-color: #565656;
+    color: #fff;
+    transition: all 0.5s ease;
+    height: 100%;
+}
+
+.choice.active .ch {
+    background-color: #e2000f;
+}
+
+.multiplecard .choice {
+    border: 4px solid #eee;
+    font-size: medium;
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    padding: 10px;
+    width: 150px;
+    float: left;
+    text-align: center;
+}
+
+.choice .text {
+    padding: 8px;
+    /* margin-left: 50px; */
+}
+
+dv.overlay {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 95px);
+    /* left: 350px; */
+    right: 0px;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.feedback {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    background: #fff;
+    position: relative;
+    top: 10vh;
+    /* vertical-align: middle; */
+}
+
+.feedback .title {
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0px;
+}
+
+.feedback .correct {
+    background-color: #889e09;
+}
+
+.feedback .incorrect,
+.feedback .tryagain {
+    background-color: #e2000f;
+}
+
+.feedback .body {
+    padding: 10px;
+}
+
+.multiplecard .card {
+    /* max-width: 200px; */
+}
+
+.choices {
+    padding: 20px;
+}
+
+.multiplecard .choice:hover {
+    border-color: #e2000f;
+}
+
+.multiplecard .choice.active {
+    border-color: #e2000f;
+    background-color: #e2000f;
+    color: #fff;
+}
+
+#feedback {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    /* left: 350px; */
+    right: 0px;
+    top: 0px;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 10;
+    display: none;
+}
+@media (max-width:759px) {
+    .multiplecard .choice {
+        width: 100%;
+        min-height: auto;
+    }
+    .choices
+    {
+        padding:0px;
+    }
+}

@@ -1,0 +1,66 @@
+<section class="sec" data-current="{{curr_page}}">
+	<div class="container_full">
+		<div class="init_padding">
+			<div class="animate">
+				<!-- <p class="page_no">Page {{curr_page+1}} of {{total_page}}</p> -->
+				<h2>{{pageTitle}}</h2>
+				<hr class="hr_width">
+			</div>
+			<div class="row">
+				<div class="col-sm-7">
+					<div class="animate padding_right_20" data-animfrom="right">
+						<div ng-repeat="item in text.p">
+							<p ng-bind-html="item | to_trusted"></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<iframe id="ifrm" data-wid="{{currentTopic.partial.width}}" data-height="{{currentTopic.partial.height}}" class="no-border border-image"
+					    width="100%" ng-if="currentTopic.partial" ng-src="{{currentTopic.partial.file}}"></iframe>
+					<!--<iframe id="ifrm" onresize="resize(this)" class="no-border border-image" ng-if="currentTopic.partial" 
+						style="max-height:{{currentTopic.partial.height}}px"
+						width="100%" height="{{currentTopic.partial.height}}"
+					    ng-src="{{currentTopic.partial.file}}"></iframe>-->
+				</div>
+			</div>
+			<!--
+			<div class="animate">
+				<div class="bottom_nav default_delay">
+					<button ng-click="next()" class="btn btn-round-radius btn_red">Next</button>
+				</div>
+			</div>
+			-->
+		</div>
+	</div>
+
+
+
+
+</section>
+
+<script>
+	$().ready(function () {
+		animate();
+		//showNext($(".default_delay"), default_delay);
+		showNext(default_delay);
+		/*var width = 400;
+		var height = 250;
+		$(window).resize(function () {
+			var new_width = $("#ifrm").width();
+			var new_height = new_width * height / width;
+			$("#ifrm").height(new_height);
+		});
+		$(window).resize();*/
+		var maxWidth = $("#ifrm").attr("data-wid");;
+		var maxHeight = $("#ifrm").attr("data-height");
+		$(window).resize(function () {
+			setTimeout(function () {
+				var width = $("#ifrm").width();
+				var height = width * maxHeight / maxWidth;
+				$("#ifrm").height(height);
+				console.log(width, maxWidth, maxHeight, height);
+			}, 500)
+		});
+		$(window).resize()
+	});
+</script>

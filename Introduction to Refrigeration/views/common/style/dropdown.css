@@ -1,0 +1,43 @@
+#feedback {
+    display: none;
+}
+
+.dropdown .text .min_100 {
+    min-width: 170px;
+    display: inline-block;
+    /* background-color: #b92c2c; */
+    /* margin: 10px; */
+    padding: 20px 10px;
+    font-size: large;
+}
+
+.pad_10 {
+    padding: 10px;
+}
+
+select.dd_select {
+    padding: 10px;
+    min-width: 70px;
+    border: 1px solid #EBEBEB;
+}
+
+select.dropdown option {
+    padding: 10px;
+}
+
+.response {
+    margin: 0 10px;
+    display: inline;
+}
+
+@media (max-width:445px) {
+    .dropdown .text .min_100 {
+        /*min-width: 145px;*/
+        width: 130px;
+        font-size: inherit;
+    }
+    .dropdown .text .min_100
+    {
+        min-width: 100px;
+    }
+}

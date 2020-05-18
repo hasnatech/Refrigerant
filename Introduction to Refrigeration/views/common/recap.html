@@ -1,0 +1,44 @@
+<section class="sec" data-current="{{curr_page}}">
+	<div class="objective">
+		<br>
+		<div id="obj_panel" class="panel">
+			<div id="recap" ng-if="getCourseCompleted() == true">
+				<div class="animate" data-animfrom="right">
+					<!-- <p class="page_no">Page {{curr_page+1}} of {{total_page}}</p> -->
+					<h2>{{pageTitle}}</h2>
+					<hr class="hr_width">
+				</div>
+
+				<div class="animate" data-animfrom="right">
+					<p ng-repeat="item in text.p">{{item}}</p>
+					<ul>
+						<li ng-repeat="item in text.li">
+							<span ng-bind-html="item | to_trusted"></span>
+						</li>
+					</ul>
+				</div>
+				<div class="animate">
+					<div class="bottom_nav default_delay">
+						<button ng-click="exit_course()" class="btn btn-round-radius btn_red">Exit</button>
+					</div>
+				</div>
+			</div>
+			<div ng-if="getCourseCompleted() == false">
+				<!-- <div class="animate" data-animfrom="right">
+					<p class="page_no">Page {{curr_page+1}} of {{total_page}}</p>
+				</div> -->
+				<div class="alert">
+					<p>{{text.info.text}}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$().ready(function () {
+		animate();
+		if ($("#recap").length != 0)
+			showNext($(".default_delay"), default_delay);
+	});
+</script>

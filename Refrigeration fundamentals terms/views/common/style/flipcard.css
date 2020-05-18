@@ -1,0 +1,39 @@
+.card-container {
+    cursor: pointer;
+    height: 233px;
+    perspective: 600;
+    position: relative;
+    width: 330px;
+    margin-bottom: 20px;
+}
+
+.card {
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: all 1s ease-in-out;
+    width: 100%;
+}
+
+.card.active {
+    transform: rotateY(180deg);
+}
+
+.card .side {
+    backface-visibility: hidden;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+}
+
+.card .back {
+    background: #ed1c24;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    padding: 75px 20px;
+    font-size: large;
+    transform: rotateY(180deg);
+}
+
