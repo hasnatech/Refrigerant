@@ -82,16 +82,15 @@
                 "text": [{
                         "direction": "image_right",
                         "p": ["Temperature is the measure of average kinetic energy of the molecules. Temperature is measured using thermometer. Two most widely used temperature scales are Fahrenheit and Celsius. ",
-                            "The SI-unit of measuring temperature is Kelvin [K] also known as the absolute scale. The reference point of this scale is the absolute zero of temperature.",
-                            "More practical unit for measuring temperature is degree Celsius [°C], also known as centigrade scale. There are two reference points. One is the freezing point of pure water (at normal pressure), taken as zero, 0°C, of the scale. The other point, taken as 100°C, corresponds to the point when pure water boils (again, under normal pressure.",
-                            "Fahrenheit (°F) is an other unit of temperature, which is commonly used in USA. One of the reference point, 32°F, corresponds to water freezing."
+                            "The SI-unit of measuring temperature is Rankine [R] also known as the absolute scale. The reference point of this scale is the absolute zero of temperature.",
+                            "More practical unit for measuring temperature is degree Farenheit [°F], also known as centigrade scale. There are two reference points. One is the freezing point of pure water (at normal pressure), taken as zero, 32°F, of the scale. The other point, taken as 212°F, corresponds to the point when pure water boils (again, under normal pressure."
                         ],
                         "image": "image/topic2/thermometer.png"
                     },
                     {
                         "direction": "text_only",
                         "p": ["<b>Converting between temperature scales</b>",
-                            "<div class='row'><div class='col-md-3 col-sm-6 bottom_20'>Celsius to Kelvin <div class='formula'> °K = °C + 273 K</div></div><div class='col-md-3 col-sm-6 bottom_20'>Kelvin to Celsius <div class='formula'> °C  = °K - 273.15 K</div></div><div class='col-md-3 col-sm-6 bottom_20'>Celsius to Farenheit <div class='formula'> °F  = (1.8 X °C) + 32 </div></div><div class='col-md-3 col-sm-6 bottom_20'>Farenheit to Celsius <div class='formula'> °C  = (°F  - 32) / 1.8 </div></div></div>"
+                            "<div class='row'><div class='col-md-3 col-sm-6 bottom_20'>Farenheit to Rankine <div class='formula'> °R = °F + 459.67 K</div></div><div class='col-md-3 col-sm-6 bottom_20'>Rankine to Farenheit <div class='formula'> °F  = °R - 459.67 K</div></div><div class='col-md-3 col-sm-6 bottom_20'>Celsius to Farenheit <div class='formula'> °F  = (1.8 X °C) + 32 </div></div><div class='col-md-3 col-sm-6 bottom_20'>Farenheit to Celsius <div class='formula'> °C  = (°F  - 32) / 1.8 </div></div></div>"
                         ]
                     }
                 ]
