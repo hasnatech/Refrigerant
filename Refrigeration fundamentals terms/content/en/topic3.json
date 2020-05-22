@@ -287,7 +287,7 @@
                         "Pressure is defined as the force exerted on an area. The SI unit of pressure is Pascal (Pa = N/m<sup>2</sup>). ",
                         "The force of the vapour on the inner surface divided by its area is called the Absolute Pressure.",
                         "Gauge pressures are pressures above atmospheric pressure. ",
-                        "Vacuum is defined as an absolute pressure of 0 bar, in general it is described as pressure lower than the atmospheric pressure.",
+                        "Vacuum is defined as an absolute pressure of 0 psi, in general it is described as pressure lower than the atmospheric pressure.",
                         "Vapour pressure is the pressure of a vapour in equilibrium with its non-vapor phase at certain constant temperature.",
                         "Density of fluid is defined as its mass per unit volume indicated by symbol ρ. The SI unit of density is kg/m<sup>3</sup>.",
                         "The boiling point of a substance is the temperature at which the vapour pressure of the liquid equals the environmental pressure surrounding the liquid."

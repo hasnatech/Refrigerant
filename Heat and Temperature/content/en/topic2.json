@@ -82,8 +82,8 @@
                 "text": [{
                         "direction": "image_right",
                         "p": ["Temperature is the measure of average kinetic energy of the molecules. Temperature is measured using thermometer. Two most widely used temperature scales are Fahrenheit and Celsius. ",
-                            "The SI-unit of measuring temperature is Rankine [R] also known as the absolute scale. The reference point of this scale is the absolute zero of temperature.",
-                            "More practical unit for measuring temperature is degree Farenheit [°F], also known as centigrade scale. There are two reference points. One is the freezing point of pure water (at normal pressure), taken as zero, 32°F, of the scale. The other point, taken as 212°F, corresponds to the point when pure water boils (again, under normal pressure."
+                            "The Imperial unit of measuring temperature is Rankine [R] also known as the absolute scale. The reference point of this scale is the absolute zero of temperature.",
+                            "More practical unit for measuring temperature is degree Farenheit [°F], also known as centigrade scale. There are two reference points. One is the freezing point of pure water (at normal pressure), taken as zero, 32°F, of the scale. The other point, taken as 212°F, corresponds to the point when pure water boils (again, under normal pressure)."
                         ],
                         "image": "image/topic2/thermometer.png"
                     },
