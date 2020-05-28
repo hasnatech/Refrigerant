@@ -1,0 +1,68 @@
+.a-main {
+    padding: 20px;
+    width: 550px;
+    background: #eee;
+    border-left: 1px solid #ddd;
+    height: calc(100vh - 50px);
+    box-shadow: 0 0 3px 4px #7d7d7d85;
+}
+
+.a-main input[type="text"],
+.a-main textarea {
+    border-radius: 0px;
+}
+
+.a-main textarea {
+    min-height: 150px;
+}
+
+.a-main .a-panel {
+    height: calc(100vh - 50px);
+    overflow: auto;
+}
+
+.a-footer {
+    position: fixed;
+    bottom: 50px;
+    height: 45px;
+    width: 350px;
+}
+
+.a-admin button[name="h1"] {
+    display: none !important;
+}
+
+.a-icon {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.int_width {
+    width: 100px;
+    display: initial;
+}
+
+.comp_width {
+    width: 150px;
+    display: initial;
+}
+
+.a-main .tab {
+    float: left;
+    padding: 10px;
+    background-color: #869098;
+    color: #fff;
+    margin: 10px 5px 0px 0px;
+    cursor:pointer;
+}
+
+.a-main .tab-body {
+    display:none;
+    padding:15px;
+    border: 1px solid #517ffb;
+    background: #fff;
+}
+
+.a-main .tab.active, .a-main .tab:hover{
+    background-color: #517ffb;
+}

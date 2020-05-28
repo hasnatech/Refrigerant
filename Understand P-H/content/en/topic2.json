@@ -1,0 +1,170 @@
+{
+    "course": {
+        "type": "welcome",
+        "welcome": "Welcome to",
+        "title": "Understand P-H diagram and Log p-h diagram",
+        "description": "Here, we will draw the P-H diagrams and log P-H diagrams for a refrigerant and realise its importance in understanding the refrigeration cycle.",
+        "duration": "Duration 15 minutes",
+        "start_btn": "start the course",
+        "audio": "media\/topic2_welcome.mp3",
+        "button": {
+            "next": "Next",
+            "prev": "Previous",
+            "try": "Try Again",
+            "submit": "Submit"
+        }
+    },
+    "menu": {
+        "topic": [{
+            "type": "objective",
+            "title": "Objective ",
+            "file": "common\/objective.html",
+            "style": "common\/style\/objective.css",
+            "audio": "media\/topic2_pg1.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": "<p>At the end of the module you will be able to:<\/p><ul><li>Draw graph to show relation between pressure-enthalpy and temperature-enthalpy.<\/li><li>Show the thermodynamic state variables in the respective phase, by drawing the Log p-h graph.<\/li><\/ul>"
+        }, {
+            "type": "accordion",
+            "title": "Pressure - Enthalpy diagram (P-h diagram)",
+            "file": "common\/accordion.html",
+            "style": "common\/style\/accordion.css",
+            "audio": "media\/topic2_pg2.mp3",
+            "showMenu": true,
+            "interaction": true,
+            "text": {
+                "t": "<p>Click the below items to learn more.<\/p>",
+                "interactivity": [{
+                    "title": "Phase change ",
+                    "icon": "image\/icon_1.png",
+                    "audio": "media\/topic2_tab1.mp3",
+                    "image": "",
+                    "reveal": "<p>The pressure-enthalpy diagram describes the entropy of the refrigerant, which is the amount of enthalpy able to be transferred per Rankine (R). This diagram describes the property of a substance.<\/p><p>Phase change will happen when we supply heat to a substance in equilibrium.<\/p><p> i.e. <\/p><ul><li>Solid - liquid equilibrium<\/li><li>Liquid - vapour equilibrium<\/li><li>Solid - vapour equilibrium<\/li><\/ul><p>When we expand this equilibrium line to surface, the surface represents heat supplied to the substance during phase change. This is P-h diagram.<\/p>",
+                    "partial": {
+                        "file": "partial\/topic2\/p-h1_c.html",
+                        "width": 530,
+                        "height": 440
+                    }
+                }, {
+                    "title": "Liquid Vapour Equilibrium",
+                    "icon": "image\/icon_2.png",
+                    "audio": "media\/topic2_tab2.mp3",
+                    "image": "",
+                    "reveal": "<p>In this map are included some of more important properties of the substances as temperature, pressure, specific volume, density, specific heat, enthalpy or entropy.<\/p>",
+                    "partial": {
+                        "file": "partial\/topic2\/p-h_dia_c.html",
+                        "width": 500,
+                        "height": 320
+                    }
+                }, {
+                    "title": "P-h diagram and Log(P)-h diagram",
+                    "icon": "image\/icon_3.png",
+                    "audio": "media\/topic2_tab3.mp3",
+                    "image": "image\/topic2\/ph_log-ph.png",
+                    "reveal": ""
+                }]
+            }
+        }, {
+            "type": "text_image",
+            "title": "Pressure - Enthalpy diagram (Log P-h diagram)",
+            "file": "common\/text_image.html",
+            "audio": "media\/topic2_pg3.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": [{
+                "direction": "image_right",
+                "p": "<p>A log p-h diagram shows the aggregate state of a substance, depending on pressure and heat. The vertical axis shows the logarithmic pressure and the horizontal axis shows the enthalpy with linear scaling. The logarithmic scaling makes it possible to represent processes with large pressure differences.<\/p><p>The diagram shown here has displays the liquid, vapour and mixture regions for the refrigerant. Liquid is found to the left (with a low energy content) - vapour to the right (with a high energy content)<\/p><p>In between you find the mixture of vapour and liquid in thermal equilibrium. The regions are bounded by a curve - called the saturation curve.<\/p>",
+                "image": "image\/topic2\/LogP-h.png"
+            }, {
+                "direction": "image_bottom",
+                "p": "<p>Represent a refrigeration cycle using Pressure - Enthalpy diagram (Log(P)-h diagram)  <\/p>",
+                "partial": {
+                    "file": "partial\/topic2\/refr vs ph diagram_c.html",
+                    "width": 780,
+                    "height": 620
+                }
+            }]
+        }, {
+            "type": "text_image",
+            "title": "Know more",
+            "file": "common\/text_image.html",
+            "audio": "media\/topic2_pg4.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": [{
+                "direction": "text_only",
+                "p": "<p><\/p><ul><li>The distinctive feature of the refrigeration cycle is that it runs counter-clockwise, i.e. opposite to the joule or steam cycle.<\/li><li>A change of state occurs when the refrigerant flows through one of the four main components in the refrigeration cycle. <\/li><\/ul><p><\/p>"
+            }]
+        }, {
+            "type": "text_image",
+            "title": "Log(P)-h diagram of refrigerant R134a",
+            "file": "common\/text_image.html",
+            "audio": "media\/topic2_pg5.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": [{
+                "direction": "image_bottom",
+                "p": "<p>A P-h diagram for R134a, azeotropic refrigerant, that is a pure refrigerant.<\/p><p>Click draw button to see the graph for constant temperature.<br\/><\/p>",
+                "partial": {
+                    "file": "partial\/topic2\/LogP-h R134a_c.html",
+                    "width": "740",
+                    "height": "602"
+                }
+            }]
+        }, {
+            "type": "text_image",
+            "title": "Log(P)-h diagram of refrigerant R134a",
+            "file": "common\/text_image.html",
+            "audio": "media\/topic2_pg6.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": [{
+                "direction": "image_bottom",
+                "p": "<p>Now you can see a log(P)-h diagram of refrigerant R134a<\/p>",
+                "image": "image\/topic2\/Log(P)-h.png",
+                "partial": {
+                    "file": "",
+                    "width": "",
+                    "height": ""
+                }
+            }]
+        }, {
+            "type": "text_image",
+            "title": "Log P\u2013h graph of Zeotropic refrigerants",
+            "file": "common\/text_image.html",
+            "audio": "media\/topic2_pg7.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": [{
+                "direction": "image_bottom",
+                "p": "<p>A constant pressure, the phase changes (boiling and condensing) occur at different temperatures, that saturation temperatures of liquid and vapour (both at the same pressure) are different.<\/p><p>Many Zeotropic refrigerant blends have different \u201ddew\u201d and \u201dbubble\u201d points, e.g. one component will start boiling before another, or condense before another.\u00a0In below example, the refrigerant will start boiling at 14\u00b0F at 58 psi, and be fully evaporated at (approx.) 24.8\u00b0F.<\/p>",
+                "image": "image\/topic2\/zeotropic_refrgerant.jpg"
+            }]
+        }, {
+            "type": "text_image",
+            "title": "Zeotropic glide issues",
+            "file": "common\/text_image.html",
+            "audio": "media\/topic2_pg8.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": [{
+                "direction": "image_bottom",
+                "p": "<p>The glide will have consequenses for the superheat setting and for the evaporation temperature: Use the mean\/average temperature, in this example 19.4\u00b0F as the superheat setpoint, so if you need a 18\u00b0F superheat, it would be +37.4\u00b0F.<\/p>",
+                "image": "image\/topic2\/zeotropic_refrgerant.jpg"
+            }]
+        }, {
+            "type": "recap",
+            "title": "Recap ",
+            "file": "common\/recap.html",
+            "style": "common\/style\/objective.css",
+            "audio": "media\/topic2_pg9.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": "<p>Let us recall:<\/p><p>Using log p-h diagram, the various state variables can be represented graphically according to their dependencies.<\/p>",
+            "info": {
+                "title": "Alert",
+                "text": "Please complete all pages to view the recap and complete the course."
+            }
+        }]
+    }
+}

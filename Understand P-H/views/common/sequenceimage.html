@@ -1,0 +1,105 @@
+<section class="sec" data-current="{{curr_page}}">
+    <div class="container_full">
+        <div class="init_padding ">
+            <div class="animate">
+                <!-- <p class="page_no">Page {{curr_page+1}} of {{total_page}}</p> -->
+                <h2>{{pageTitle}}</h2>
+                <hr class="hr_width">
+            </div>
+
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="animate">
+                        <p ng-repeat="item in text.t">{{item}}</p>
+                        <div class="sequence">
+                            <div class="row1">
+                                <div class="nav_button">
+                                    <button class="next">
+                                        <img src="image/shell/right.png" alt="previous">
+                                    </button>
+                                    <button class="prev">
+                                        <img src="image/shell/left.png" alt="next">
+                                    </button>
+                                </div>
+                                <div class="sequence_img" ng-repeat="item in text.interactivity">
+                                    <img ng-src="{{item.image}}" alt="{{item.reveal}}">
+                                </div>
+
+                            </div>
+                            <div class="row2">
+                                <div class="sequence_text" ng-repeat="item in text.interactivity">
+                                    <p>{{item.reveal}}</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                        <!--<div class="bottom_nav">
+                            <button ng-click="next()" class="btn btn-round-radius btn_red">Next</button>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    $().ready(function () {
+        var next_appears = false;
+        animate();
+        $(".bottom_nav").hide();
+        $(".nav_button .next").click(function () {
+            show(++curr, 'left', 'right');
+        });
+        $(".nav_button .prev").click(function () {
+            show(--curr, 'right', 'left');
+        });
+        var curr = 0;
+        var prev = 0;
+        $(".sequence_img img").hide();
+        $(".sequence_text").hide();
+        show(0);
+        showNext(default_delay);
+        function show(v, prevAnim, nextAnim) {
+            if (v < 0) {
+                curr = $(".sequence_img").length - 1;
+            } else if (v >= $(".sequence_img").length) {
+                curr = 0;
+            } else {
+                curr = v;
+            }
+            $(".sequence_img").eq(prev).find("img").hide('slide', {
+                direction: prevAnim
+            }, 500);
+            $(".sequence_img").eq(curr).find("img").show('slide', {
+                direction: nextAnim
+            }, 500);
+
+            var a1, a2;
+            if (prevAnim == 'left') {
+                a1 = "down";
+                a2 = "up";
+            } else {
+                a1 = "up";
+                a2 = "down";
+            }
+
+            $(".sequence_text").eq(prev).hide('slide', {
+                direction: a1
+            }, 500);
+            $(".sequence_text").eq(curr).show('slide', {
+                direction: a2
+            }, 500);
+            $(".sequence_text").eq(curr).attr("data-visited", "true");
+
+            /*if ($(".sequence_text[data-visited='true']").length == $(".sequence_img").length && next_appears ==
+                false) {
+                //appear($(".bottom_nav"), 1000);
+                next_appears = true;
+                pageCompleted($(".sec").data("current"));
+            }*/
+
+            prev = curr;
+        }
+    });
+</script>

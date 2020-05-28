@@ -1,0 +1,217 @@
+<div id="icon" class="a-icon">
+    <i class="fa fa-cog pull-right"></i>
+</div>
+
+<div class="a-main">
+    <div id="a-close">
+        <i class="fa fa-times pull-right"></i>
+    </div>
+    <div class="a-panel">
+        <div ng-if="content.course.type == 'welcome' && page == null">
+            <div class="form-group">
+                <label>Welcome</label>
+                <input type="text" class="form-control" ng-model="content.course.welcome" />
+            </div>
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control" ng-model="content.course.title" />
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                <textarea class="form-control" ng-model="content.course.description" />
+                </div>
+            <div class="form-group">
+                <label>Duration</label>
+                <input type="text" class="form-control" ng-model="content.course.duration" />
+            </div>
+        </div>
+        <div ng-if="page.type == 'objective'">
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control" ng-model="page.title" />
+            </div>
+            <div class="form-group">
+                <label>Text</label>
+                <div text-angular="text-angular" ta-toolbar="[['p','bold','italics','ul','redo', 'undo', 'html'],['wordcount', 'charcount']]"
+                    ng-model="page.text"></div>
+            </div>
+            <!--<div class="form-group">
+            <label>Audio</label>
+            <input type="text" class="form-control" ng-model="page.audio" />
+        </div>-->
+        </div>
+
+        <div ng-if="page.type == 'recap'">
+                <div class="form-group">
+                    <label>Title</label>
+                    <input type="text" class="form-control" ng-model="page.title" />
+                </div>
+                <div class="form-group">
+                    <label>Text</label>
+                    <div text-angular="text-angular" ta-toolbar="[['p','bold','italics','ul','redo', 'undo', 'html'],['wordcount', 'charcount']]"
+                        ng-model="page.text"></div>
+                </div>
+                <div class="form-group">
+                        <label>Alert Title</label>
+                        <input type="text" class="form-control" ng-model="page.info.title" />
+                    </div>
+                    <div class="form-group">
+                        <label>Alert Text</label>
+                        <input type="text" class="form-control" ng-model="page.info.text" />
+                    </div>
+                <!--<div class="form-group">
+                <label>Audio</label>
+                <input type="text" class="form-control" ng-model="page.audio" />
+            </div>-->
+            </div>
+
+        <div ng-if="page.type == 'text_image'">
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control" ng-model="page.title" />
+            </div>
+            <div>
+                    <div class="item" ng-repeat="item in page.text">
+                            <div class="tab" onclick="tabClick(this)" data-id="{{$index}}">{{$index + 1}}</div>
+                        </div>
+                        <div ng-show=" page.text.length < 7" class="tab" ng-click="page.text.push({
+                            'direction': 'text_only',
+                            'p': '<p>Sample content<\/p>',
+                            'partial': {
+                                'file': '',
+                                'width': 780,
+                                'height': 620
+                            }
+                        })">+</div>
+                        <div class="clear"></div>
+                <div class="item" ng-repeat="item in page.text">
+                        <div id="{{$index}}" class="tab-body">
+                            <div ng-if="$index > 0"  id="icon" class="a-icon" ng-click="
+                                    page.text.splice($index, 1);
+                                ">
+                                    <i class="fa fa-trash fa-lg pull-right" ></i>
+                                </div>
+                    <label>Direction</label>
+                    <select ng-model="item.direction" class="form-control comp_width">
+                        <option value="image_right">Image Right</option>
+                        <option value="image_bottom">Image Bottom</option>
+                        <option value="text_only">Text Only</option>
+                    </select>
+                    <div class="form-group">
+                        <label>Content</label>
+                        <div text-angular="text-angular" ta-toolbar="[['p','bold','italics','ul','redo', 'undo', 'html']]"
+                            ng-model="item.p"></div>
+                    </div>
+               
+                    <div class="form-group" ng-if="item.direction != 'text_only'">
+                            <div ng-init="myVar =  item.image != null ? 'image' : 'animate'"></div>
+                            <input type="radio" ng-model="myVar" selected="item.image != null" value="image">Image
+                            <input type="radio" ng-model="myVar" value="animate">External HTML
+                        <hr>
+                        <div ng-if="myVar == 'image'">
+                                <label>Image Path</label>
+                                <input type="text" class="form-control" ng-model="item.image" />
+                        </div>
+                        <div ng-if="myVar == 'animate'">
+                            <label>Path</label>
+                            <input type="text" class="form-control" ng-model="item.partial.file" />
+                            <br>
+                            Width
+                            <input type="text" class="form-control int_width" ng-model="item.partial.width" />
+                            Height
+                            <input type="text" class="form-control int_width" ng-model="item.partial.height" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="form-group">
+                <label>Audio</label>
+                <input type="text" class="form-control" ng-model="page.audio" />
+            </div>-->
+        </div>
+        </div>
+        <div ng-if="page.type == 'accordion'">
+            <div class="form-group">
+                <label>Title</label>
+                <input type="text" class="form-control" ng-model="page.title" />
+            </div>
+            <div>
+                <label>Top text</label>
+                <input type="text" class="form-control" ng-model="page.text.t" />
+                <div class="item" ng-repeat="item in page.text.interactivity">
+                    <div class="tab" onclick="tabClick(this)" data-id="{{$index}}">{{$index + 1}}</div>
+                </div>
+                <div ng-show=" page.text.interactivity.length < 7" class="tab" ng-click="page.text.interactivity.push({
+                    'title': 'Tab Title',
+                    'icon': '',
+                    'image': '',
+                    'reveal': 'Tab content'
+                })">+</div>
+                <div class="clear"></div>
+                <div class="item" ng-repeat="item in page.text.interactivity">
+                    <div id="{{$index}}" class="tab-body">
+                        <div ng-if="$index > 0"  id="icon" class="a-icon" ng-click="
+                                page.text.interactivity.splice($index, 1);
+                            ">
+                                <i class="fa fa-trash fa-lg pull-right" ></i>
+                            </div>
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input type="text" class="form-control" ng-model="item.title" />
+                        </div>
+                        <div class="form-group">
+                            <label>Content</label>
+                            <div text-angular="text-angular" ta-toolbar="[['p','bold','italics','ul','redo', 'undo', 'html']]"
+                                ng-model="item.reveal"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="form-group">
+                <label>Audio</label>
+                <input type="text" class="form-control" ng-model="page.audio" />
+            </div>-->
+        </div>
+      
+    </div>
+
+    <div class="a-footer">
+        <button type="button" class="btn btn-primary" ng-click="save_json()">Save</button>
+        <span id="a-msg">{{msg}}</span>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var options = [{
+    name: 'Something Cool',
+    value: 'something-cool-value'
+    }, {
+    name: 'Something Else',
+    value: 'something-else-value'
+    }];
+    $().ready(function(){
+        $("#icon").click(function(){
+            $(".a-main").show();
+            $(this).hide();
+        });
+        $("#a-close").click(function(){
+            $(".a-main").hide();
+            $("#icon").show();
+        });
+        $("#a-close").click();
+        
+    });
+    function tabClick(ths)
+    {
+        var id = $(ths).attr("data-id");
+        $(".tab").removeClass("active");
+        $(ths).addClass("active");
+        $(".tab-body").hide();
+        $("#"+id).show();
+    }
+    function plusClick()
+    {
+        
+    }
+</script>

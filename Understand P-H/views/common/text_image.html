@@ -1,0 +1,95 @@
+<section class="sec" data-current="{{curr_page}}">
+	<div class="init_padding">
+		<div class="animate" data-animfrom="right">
+			<h2 ng-bind-html="page.title | to_trusted"></h2>
+			<hr class="hr_width">
+		</div>
+		<div id="text_image" ng-repeat="item in page.text" data-direction="{{item.direction}}">
+			<div ng-if="item.direction == 'image_right'" class="row">
+				<div class="col-sm-7">
+					<div class="animate padding_right_20" data-animfrom="right">
+						<div ng-bind-html="item.p | to_trusted"></div>
+					</div>
+				</div>
+				<div class="col-sm-5">
+					<img ng-if="item.image" ng-src="{{item.image}}" class="top_20 border-image width_100 animate" alt="">
+
+					<iframe data-direction="{{item.direction}}" ng-if="item.partial && item.partial.file != ''" data-wid="{{item.partial.width}}" data-height="{{item.partial.height}}" class="ifrm no-border border-image"
+					    width="100%" ng-if="item.partial" ng-src="{{item.partial.file}}"></iframe>
+				</div>
+			</div>
+			<div ng-if="item.direction == 'image_bottom'" class="row">
+				<div class="col-sm-12">
+					<div class="animate padding_right_20" data-animfrom="right">
+						<div ng-bind-html="item.p | to_trusted"></div>
+					</div>
+				</div>
+				<div class="col-sm-12">
+					<div class="text-center">
+						<img ng-if="item.image" ng-src="{{item.image}}" class="top_20 border-image width_sm_100 animate" alt="">
+
+						<iframe data-direction="{{item.direction}}" ng-if="item.partial && item.partial.file != ''" data-wid="{{item.partial.width}}" data-height="{{item.partial.height}}" class="ifrm no-border border-image"
+						    width="100%" ng-if="item.partial" ng-src="{{item.partial.file}}"></iframe>
+					</div>
+
+				</div>
+			</div>
+			<div ng-if="item.direction == 'text_only'" class="row">
+				<div class="col-sm-12">
+					<div class="animate padding_right_20" data-animfrom="right">
+						<div ng-bind-html="item.p | to_trusted"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$().ready(function () {
+		animate();
+		showNext(default_delay);
+
+		var i = 0;
+		var maxWidth = new Array();
+		var maxHeight = new Array();
+		var frames = new Array();
+		var dir = new Array();
+		$(".ifrm").each(function () {
+			frames[i] = $(this);
+			dir[i] = $(this).attr("data-direction");
+			maxWidth[i] = $(this).attr("data-wid");
+			maxHeight[i] = $(this).attr("data-height");
+			//console.log(maxWidth[i], maxHeight[i]);
+			i++;
+		});
+		var j = 0;
+		$(window).resize(function () {
+			j = 0;
+			$(".ifrm").each(function () {
+				setTimeout(function () {
+					if (frames.length > 0) {
+						frames[j].css("max-width", maxWidth[j] + "px");
+						var width = frames[j].width();
+						var height = width * maxHeight[j] / maxWidth[j];
+						frames[j].height(height);
+						console.log(frames[j], $("#text_image").attr("data-direction"), width, maxWidth[j], maxHeight[j], height);
+
+						if (dir[i] == "image_right") {
+							maxWidth[j] = Math.max(maxWidth[j], $("#text_image").width());
+							if (width < maxWidth[j] && frames[j] != null) {
+								frames[j].css("max-width", maxWidth[j] + "px");
+								var height = maxWidth[j] * maxHeight[j] / maxWidth[j];
+								frames[j].height(height);
+							}
+						}
+					}
+
+					j++;
+				}, 250 + (j * 10));
+
+			});
+		});
+		$(window).resize();
+	});
+</script>

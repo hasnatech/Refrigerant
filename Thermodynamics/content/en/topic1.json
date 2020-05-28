@@ -1,0 +1,157 @@
+{
+    "course": {
+        "type": "welcome",
+        "welcome": "Welcome to",
+        "title": "Thermodynamics",
+        "description": "In this section, we will define some of the thermodynamic properties of a refrigeration system.",
+        "duration": "Duration 20 minutes",
+        "start_btn": "start the course",
+        "audio": "media\/topic3_welcome.mp3",
+        "button": {
+            "next": "Next",
+            "prev": "Previous",
+            "try": "Try Again",
+            "submit": "Submit"
+        }
+    },
+    "menu": {
+        "topic": [{
+            "type": "objective",
+            "title": "Objective ",
+            "file": "common\/objective.html",
+            "style": "common\/style\/objective.css",
+            "audio": "media\/topic1_pg1.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": "<p>At the end of the module you will be able to:<\/p><ul><li>Define properties of thermodynamic systems that is enthalpy and entropy and their relation with pressure and temperature.<\/li><li>Draw skeletal graph to show relation between pressure- temperature and temperature-enthalpy.<\/li><\/ul>"
+        }, {
+            "type": "text_image",
+            "title": "Thermodynamic",
+            "file": "common\/text_image.html",
+            "audio": "media\/topic1_pg2.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": [{
+                "direction": "text_only",
+                "p": "<p>A portable refrigeration system cannot work steadily within a room without exchanging fluids with the outdoors, contrary to a heater. The reason is not obvious but demands deep thermodynamic insight. <\/p><p><b>Thermo<\/b> is about <b>Heat and dynamics<\/b> is about <b>power or motion<\/b>.<\/p><p>Thermodynamics is the study of energy interactions between systems that are in equilibrium and the effect of these interactions on the system properties. Energy transfer between systems takes place in the form of heat and\/or work.<\/p>"
+            }]
+        }, {
+            "type": "text_image",
+            "title": "Thermodynamic properties",
+            "file": "common\/text_image.html",
+            "audio": "media\/topic1_pg3.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": [{
+                "direction": "text_only",
+                "p": "<p>A thermodynamic property depends only on the state of the system and is independent of the path by which the system arrived at the given state.<\/p><p>Thermodynamic properties which are relevant to refrigeration and air-conditioning are:<\/p><ul><li>Temperature<\/li><li>Pressure<\/li><li>Volume<\/li><li>Density<\/li><li>Specific heat<\/li><li>Enthalpy<\/li><li>Entropy<\/li><\/ul><p><\/p>"
+            }]
+        }, {
+            "type": "accordion",
+            "title": "Enthalpy, Entropy",
+            "file": "common\/accordion.html",
+            "style": "common\/style\/accordion.css",
+            "audio": "media\/topic1_pg4.mp3",
+            "showMenu": true,
+            "interaction": true,
+            "text": {
+                "t": "<p>Click the below items to learn more.<\/p>",
+                "interactivity": [{
+                    "title": "Enthalpy ",
+                    "icon": "",
+                    "image": "",
+                    "reveal": "<p>Enthalpy is a property of a thermodynamic system. Enthalpy is the sum of internal energy of the system plus the product of the pressure of the gas in the system and its volume.<\/p><div class=\"formula text_center\">i.e. h = E + pV<\/div><p>h = Enthalpy, E = Internal energy, p = Pressure, V = Volume<\/p><p><b>Unit of Enthalpy<\/b><\/p><p>Kilojoule per kilogram - <b>kJ\/kg<\/b><\/p><p>British Thermal Unit per pound - <b>BTU\/lb<\/b><\/p><div class=\"formula text_center\">1 BTU\/lb = 2.326 kJ\/kg<\/div><p>The amount of heat added or removed per unit mass is the change in enthalpy of a substance. It is denoted by &#34;\u2206h&#34;<\/p>"
+                }, {
+                    "title": "Entropy",
+                    "icon": "",
+                    "image": "",
+                    "reveal": "<p>Disorder of a substance can happen by transferring energy without doing any work. This is called entropy of that substance. Increase in disorder results in higher entropy.<\/p><p>This disorder is not reversible (i.e. put back to original order) without the application of work.<\/p><p>For example:<\/p><ul><li>Ice can be melted to water when energy is transferred without doing any work, but water cannot be transferred back to ice without the application of work.<\/li><li>A new deck of cards comes with all the cards in order. Shuffling those mixes up the cards. Now take a deck of cards that's mixed up and shuffle them. The cards do not come back to their original order.<\/li><\/ul><div class=\"formula\">Entropy \u2206S = Q\/TM<\/div><p>Q = heat absorbed, T = Temperature<\/p><p><b>Unit of Entropy\u00a0<\/b><\/p><p>Kilojoule per Kilogram x Kelvin - kJ\/kg*K<\/p><p>British thermal unit per pound x Rankine temperature scale. - BTU\/lb*R<\/p>"
+                }]
+            }
+        }, {
+            "type": "text_image",
+            "title": "Property of a pure substance",
+            "file": "common\/text_image.html",
+            "audio": "media\/topic1_pg6.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": [{
+                "direction": "image_right",
+                "p": "<p>A pure substance is one whose chemical composition does not change during thermodynamic processes. Water and refrigerants are examples of pure substances. The property of a pure substance can be drawn in the form of charts.<\/p><ul><li>Pressure - Temperature chart (P - T diagram)<\/li><li>Temperature - Enthalpy chart (T - h diagram)<\/li><li>Temperature - Entropy chart (T - S diagram)<\/li><li>Pressure - Enthalpy chart (P - h diagram) - commonly used in refrigeration and air conditioning.<\/li><\/ul><p><b>Note<\/b>: Pressure enthalpy diagram is commonly used in refrigeration and air conditioning.<\/p>",
+                "partial": {
+                    "file": "partial\/topic1\/ice-water-vapour_c.html",
+                    "width": 240,
+                    "height": 480
+                }
+            }]
+        }, {
+            "type": "text_image",
+            "title": "Temperature - Enthalpy diagram (T-h diagram)",
+            "file": "common\/text_image.html",
+            "audio": "media\/topic1_pg8.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": [{
+                "direction": "image_bottom",
+                "p": "<p>Temperature enthalpy diagram for water<\/p>",
+                "partial": {
+                    "file": "partial\/topic1\/T-h_c.html",
+                    "width": "920",
+                    "height": "595"
+                }
+            }]
+        }, {
+            "type": "text_image",
+            "title": "Temperature - Enthalpy diagram (T-h diagram)",
+            "file": "common\/text_image.html",
+            "audio": "media\/topic1_pg9.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": [{
+                "direction": "image_bottom",
+                "p": "<p>Temperature enthalpy diagram for water <b>(Different pressure)<\/b><\/p>",
+                "image": "image\/topic1\/graphs.png"
+            }]
+        }, {
+            "type": "text_image",
+            "title": "Pressure - Temperature diagram (CO<sub>2<\/sub> phase diagram)",
+            "file": "common\/text_image.html",
+            "audio": "media\/topic1_pg7.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": [{
+                "direction": "image_bottom",
+                "p": " <p>Pressure Temperature diagram for CO<sub>2<\/sub><\/p>",
+                "image": "image\/topic1\/t_p_co2_c.jpg"
+            }]
+        }, {
+            "type": "video_embed",
+            "title": "CO<sub>2<\/sub> phase change",
+            "file": "common\/embed_video.html",
+            "audio": "",
+            "showMenu": true,
+            "interaction": false,
+            "text": {
+                "top": "",
+                "video": {
+                    "link": "https://www.youtube.com/embed/zu-S1GxmkCo?rel=0&amp;showinfo=0",
+                    "width": "560",
+                    "height": "315"
+                }
+            }
+        }, {
+            "type": "recap",
+            "title": "Recap ",
+            "file": "common\/recap.html",
+            "style": "common\/style\/objective.css",
+            "audio": "media\/topic1_pg10.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": "<p>Let us recall<\/p><ul><li>Thermodynamics is the study of energy interactions between systems that are in equilibrium and the effect of these interactions on the system properties.\u00a0<\/li><li>Temperature, pressure, volume, density, specific heat, enthalpy and entropy are Thermodynamic properties that are relevant to refrigeration and air-conditioning systems.<\/li><li>Enthalpy is a property of a thermodynamic system, which is the sum of internal energy of the system plus the product of the pressure of the gas in the system and its volume.<\/li><li>Entropy of a system is the disorder\/order of a substance that can happen by transferring energy without doing any work.<\/li><\/ul>",
+            "info": {
+                "title": "Alert",
+                "text": "Please complete all pages to view the recap and complete the course."
+            }
+        }]
+    }
+}

@@ -1,0 +1,34 @@
+<section class="sec" data-current="{{curr_page}}">
+	<div class="init_padding">
+		<div id="recap" ng-if="getCourseCompleted() == true">
+			<div class="animate" data-animfrom="right">
+				<h2>{{page.title}}</h2>
+				<hr class="hr_width">
+			</div>
+			<div>
+				<div class="animate" data-animfrom="right" ng-repeat="item in text.p">
+					<p ng-bind-html="item | to_trusted"></p>
+				</div>
+				<ul class="item animate" >
+					<li class="txt" data-animfrom="right" ng-repeat="item in text.li">
+						<span ng-bind-html="item | to_trusted"></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div ng-if="getCourseCompleted() == false">
+			<div class="alert">
+				<p>{{text.info.text}}</p>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<script>
+	$().ready(function () {
+		animate();
+		if ($("#recap").length != 0)
+			showNext(default_delay);
+	});
+</script>

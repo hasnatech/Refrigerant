@@ -1,0 +1,37 @@
+<section class="sec" data-current="{{curr_page}}">
+	<div class="objective">
+		<br>
+		<div id="obj_panel" class="panel">
+			<div id="recap" ng-if="getCourseCompleted() == true">
+				<div class="animate" data-animfrom="right">
+					<h2>{{page.title}}</h2>
+					<hr class="hr_width">
+				</div>
+
+				<div class="animate" data-animfrom="right">
+					<div ng-bind-html="page.text | to_trusted"></div>
+				</div>
+				<!--<div class="animate">
+					<div class="bottom_nav default_delay">
+						<button ng-click="exit_course()" class="btn btn-round-radius btn_red">Exit</button>
+					</div>
+				</div>-->
+			</div>
+			<div ng-if="getCourseCompleted() == false">
+				<div class="alert">
+					<h3>{{page.info.title}}</h3>
+					<p>{{page.info.text}}</p>
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+</section>
+
+<script>
+	$().ready(function () {
+		animate();
+		if ($("#recap").length != 0)
+			showNext($(".default_delay"), default_delay);
+	});
+</script>

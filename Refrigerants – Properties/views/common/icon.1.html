@@ -1,0 +1,34 @@
+<section class="sec" data-current="{{curr_page}}">
+	<div class="init_padding">
+		<div class="animate" data-animfrom="right">
+			<h2>{{page.title}}</h2>
+			<hr class="hr_width">
+		</div>
+		<div>
+			<p></p>
+			<div class="row">
+				<div class="col-sm-3" ng-repeat="item in page.text.icons" data-animfrom="right">
+					<div class="p-nel animate padding_right_20 text-center">
+						<img class="img" ng-src="{{item.icon}}" alt="">
+						<div class="txt" ng-bind-html="item.p | to_trusted"></div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="animate" ng-bind-html="page.text.bottom | to_trusted"></div>
+						<div class="text-center">
+								<img ng-if="page.text.image" ng-src="{{page.text.image}}" class="top_20 border-image width_sm_100 animate" alt="">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+
+<script>
+	$().ready(function () {
+		animate();
+		showNext(default_delay);
+
+	});
+</script>

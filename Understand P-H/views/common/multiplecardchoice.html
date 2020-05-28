@@ -1,0 +1,116 @@
+<section class="sec" data-current="{{curr_page}}">
+	<div class="container_full">
+		<div class="init_padding">
+		<div class="row">
+			<div class="col-sm-12">
+				<div class=" animate">
+					<!-- <p class="page_no">Page {{curr_page+1}} of {{total_page}}</p> -->
+					<h2>{{pageTitle}}</h2>
+					<hr class="hr_width">
+				</div>
+				<div class="animate multiplecard">
+					<p ng-repeat="item in text.ques">{{item}}</p>
+
+					<div class="choices">
+						<div class="choice" ng-repeat="ch in text.choices">
+							<div class="card text">{{ch}}</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<div class="top_20"></div>
+					<button id="submit" class="btn btn-round-radius btn_round_red">{{text.button.submit}}</button>
+
+					<input type="hidden" id="correct_feedback" value="{{text.feedback.correct}}">
+					<input type="hidden" id="try_feedback" value="{{text.feedback.tryagain}}">
+					<input type="hidden" id="incorrect_feedback" value="{{text.feedback.incorrect}}">
+					<input type="hidden" id="correct" value="{{text.correct}}">
+
+					<div id="feedback">
+						<div class="table-div">
+							<div class="table-cell">
+								<div class="msg_box">
+									<div class="body">
+										<div class="title correct">
+											123 title
+										</div>
+										<div class="body">
+											<!--<img id="feed_img" class="float_left">-->
+											<div class="txt"> 123 text</div>
+											<div class="top_20 text_center">
+												<button id="try_btn" class="btn btn-round-radius btn_round_red">{{text.button.tryagain}}</button>
+												<button id="quiz_next_btn" ng-click="next()" class="btn btn-round-radius btn_round_red">Next</button>
+											</div>
+											<div class="clear"></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$().ready(function () {
+		animate();
+		$("#quiz_next_btn").hide();
+		$(".choice").click(function () {
+			$(this).toggleClass("active");
+			checkSumbit();
+		});
+
+		function checkSumbit() {
+			if ($(".choice.active").length > 1) {
+				$("#submit").fadeIn(1000);
+			} else {
+				$("#submit").fadeOut(500);
+			}
+		}
+		checkSumbit();
+
+		var try_again = 3;
+		var user_try = 0;
+		$("#submit").click(function () {
+			var user_ch = "";
+			user_try++;
+			$(".choice.active").each(function () {
+				user_ch += ($(this).index() + 1) + ",";
+			});
+			console.log(user_ch + " == " + $("#correct").val() + ",");
+			$("#feedback .title").removeClass("correct");
+			$("#feedback .title").removeClass("tryagain");
+			$("#feedback .title").removeClass("incorrect");
+			$("#feedback").fadeIn(500);
+			if (user_ch == $("#correct").val() + ",") {
+				$("#feedback .title").text("Correct");
+				$("#feedback .title").addClass("correct");
+				$("#feedback .body .txt").text($("#correct_feedback").val());
+				$("#quiz_next_btn").show();
+				$("#try_btn").hide();
+				pageCompleted($(".sec").data("current"));
+			} else {
+				if (user_try < try_again) {
+					$("#feedback .title").text("Try Again");
+					$("#feedback .title").addClass("tryagain");
+					$("#feedback .body .txt").text($("#try_feedback").val());
+				} else {
+					$("#feedback .title").text("Incorrect");
+					$("#feedback .title").addClass("incorrect");
+					$("#feedback .body .txt").text($("#incorrect_feedback").val());
+					$("#quiz_next_btn").show();
+					$("#try_btn").hide();
+					pageCompleted($(".sec").data("current"));
+				}
+				$("#feed_img").attr("src", "image/wrong.png");
+			}
+		});
+
+		$("#try_btn").click(function () {
+			$("#feedback").fadeOut(500);
+		});
+	});
+</script>

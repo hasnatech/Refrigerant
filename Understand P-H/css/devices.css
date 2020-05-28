@@ -1,0 +1,40 @@
+
+
+#footer {
+    background-image: url("../image/shell/footer_bg_60.png") !important;
+    min-height: 60px !important;
+}
+#back_btn, #next_btn {
+    height: 60px !important;
+    width: 55px !important;
+}
+#back_btn {
+    background: rgba(0, 0, 0, 0) url("../image/shell/back_btn.png") no-repeat scroll 20px center !important;
+}
+#next_btn {
+    background: rgba(0, 0, 0, 0) url("../image/shell/next_btn.png") no-repeat scroll 20px center !important; line-height: 60px !important;
+}
+
+#copyright {
+    line-height: 60px !important;
+    width: 590px !important;
+}
+
+.topPad {
+    padding: 20px !important;
+}
+
+#menu {
+    padding: 19px !important;
+}
+#acessibility {
+    padding: 21px !important;
+}
+#touch_swipe {
+    padding: 16px 21px !important;
+	display: block !important;
+}
+
+.home{ top:-30px !important;}
+
+

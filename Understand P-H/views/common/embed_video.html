@@ -1,0 +1,21 @@
+<section class="sec" data-current="{{curr_page}}">
+    <div class="init_padding">
+        <div class="animate" data-animfrom="right">
+            <h2 ng-bind-html="page.title | to_trusted"></h2>
+            <hr class="hr_width">
+        </div>
+        <br>
+        <div class="text-center max-width">
+            <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zu-S1GxmkCo?rel=0&amp;showinfo=0"
+                    frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+	$().ready(function () {
+        showNext(default_delay);
+    });
+</script>

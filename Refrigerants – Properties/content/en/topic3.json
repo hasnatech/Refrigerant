@@ -1,0 +1,245 @@
+{
+    "course": {
+        "type": "welcome",
+        "welcome": "Welcome to",
+        "title": "Refrigerants \u2013 Properties and Classification",
+        "description": "We will now analyse someproperties of refrigerants that qualify them as greener refrigerants over years.",
+        "duration": "Duration 15 minutes",
+        "start_btn": "start the course",
+        "audio": "media\/topic3_welcome.mp3",
+        "button": {
+            "next": "Next",
+            "prev": "Previous",
+            "try": "Try Again",
+            "submit": "Submit"
+        }
+    },
+    "menu": {
+        "topic": [{
+            "type": "objective",
+            "title": "Objective ",
+            "file": "common\/objective.html",
+            "style": "common\/style\/objective.css",
+            "audio": "media\/topic3_pg1.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": "<p>In this section, we will learn:<\/p><ul><li>List properties of refrigerants.<\/li><li>Classify refrigerants based on their levels of purity.<\/li><li>Draw Log P-h graph for zeotropic refrigerants.<\/li><li>Identify properties of greener refrigerants based on various protocols.<\/li><\/ul>"
+        }, {
+            "type": "text_image",
+            "title": "Refrigerants",
+            "file": "common\/text_image.html",
+            "audio": "media\/topic3_pg2.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": [{
+                "direction": "image_bottom",
+                "p": "<p>Refrigerants are substances used in heat cycle which undergoes reversible phase change from liquid to gas or vapour.<\/p>",
+                "image": "image\/topic3\/refrigerants_t3.png"
+            }, {
+                "direction": "text_only",
+                "p": "<p><b>Azeotropic and zeotropic refrigerants<\/b><\/p>  <p>A refrigerant can either be a pure chemical compound (azeotropic refrigerant) or a mixture\/blend of more refrigerants (zeotropic refrigerant).<\/p>"
+            }]
+        }, {
+            "type": "text_image",
+            "title": "Properties of Refrigerants",
+            "file": "common\/text_image.html",
+            "audio": "media\/topic3_pg3.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": [{
+                "direction": "image_right",
+                "p": "<p>An ideal refrigerant should have good thermodynamic properties.<\/p><ul><li><b>Boiling point<\/b> - Below the target temperature.<\/li><li><b>High heat of vaporization.<\/b><\/li><li><b>Moderate density<\/b> in liquid form.<\/li><li><b>Relatively high density<\/b> in gaseous form.<\/li><li>High <b>critical temperature<\/b>.<\/li><li><b>Global Warming Potential<\/b> (GWP) should be &lt; 150.<\/li><li><b>Ozone Depletion Potential<\/b> (ODP) = 0.<\/li><li><b>Total Equivalent Warming Impact<\/b> (TEWI) should be low.<\/li><li>Evaporator outlet pressure (<b>Po<\/b>) should be greater than atmospheric pressure.<\/li><li><b>Chemically stable<\/b> inside the refrigeration system.<\/li><\/ul><p><b>Note<\/b>: since boiling point and density are affected by pressure, selection of refrigerant should be according to the application by choice of operating pressure.<\/p><p><br\/><\/p>",
+                "image": "image\/topic3\/Properties_of_refrigerants_t3.png"
+            }]
+        }, {
+            "title": "Selection of Refrigerants",
+            "file": "common\/sequenceimage.2.html",
+            "style": "common\/style\/sequenceimage.2.css",
+            "audio": "media\/topic3_pg6.mp3",
+            "showMenu": true,
+            "interaction": true,
+            "text": {
+                "t": ["Click the next \/ previous arrow  to learn more about selection of refrigerants under different conditions:"],
+                "interactivity": [{
+                    "text": "",
+                    "image": "image\/topic3\/flip_1.png",
+                    "reveal": "Based on application"
+                }, {
+                    "text": "",
+                    "image": "image\/topic3\/flip_2.png",
+                    "reveal": "Operating pressure"
+                }, {
+                    "text": "",
+                    "image": "image\/topic3\/flip_3.png",
+                    "reveal": "Required temperature"
+                }, {
+                    "text": "",
+                    "image": "image\/topic3\/flip_4.png",
+                    "reveal": "Low cost and easy to obtain and handle"
+                }]
+            }
+        }, {
+            "type": "text_image",
+            "title": "Refrigerants in 185 years",
+            "file": "common\/icon.1.html",
+            "style": "common\/style\/icon.1.css",
+            "audio": "media\/topic3_pg7.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": {
+                "icons": [{
+                    "icon": "image\/topic3\/icon5.png",
+                    "p": "<p>The fourth big transformation is ongoing.<\/p>"
+                }, {
+                    "icon": "image\/topic3\/icon6.png",
+                    "p": "<p>Safety is the qualifying parameter.<\/p>"
+                }, {
+                    "icon": "image\/topic3\/icon7.png",
+                    "p": "<p>Energy efficiency is the winning parameter.<\/p>"
+                }, {
+                    "icon": "image\/topic3\/icon8.png",
+                    "p": "<p>Regulatory certainty is driving technology development.<\/p>"
+                }],
+                "bottom": "<p>Closing the loop to greener refrigerants.<\/p>",
+                "image": "image\/topic3\/0012.png"
+            }
+        }, {
+            "type": "text_image",
+            "title": "The Montreal Protocol",
+            "file": "common\/text_image.html",
+            "audio": "media\/topic3_pg8.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": [{
+                "direction": "image_bottom",
+                "p": "<p>Encouraging investment into new technology. The EU phase down is not based on exactly the same measures as the Montreal Protocol. The Montreal Protocol HFC phase down goes into force on January 1, 2019. At least 20 Parties deposit their instruments of ratification, acceptance or approval by that date.</p>",
+                "image": "image\/topic3\/0125.png"
+            }]
+        }, {
+            "type": "text_image",
+            "title": "The EU F-gas Regulation",
+            "file": "common\/icon.html",
+            "style": "common\/style\/icon.css",
+            "audio": "media\/topic3_pg9.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": {
+                "top": "<p>First serious phase down step approaches in 2018.<\/p>",
+                "icons": [{
+                    "icon": "image\/topic3\/icon1.png",
+                    "p": "<p>Market impact was blurred by stock piling and succeeding unused 2015 quota.<\/p>"
+                }, {
+                    "icon": "image\/topic3\/icon2.png",
+                    "p": "<p>New high GWP equipment was still placed on the market in 2016.<\/p>"
+                }, {
+                    "icon": "image\/topic3\/icon3.png",
+                    "p": "<p>From 2017 imported pre-charged units were included in the quota.<\/p>"
+                }, {
+                    "icon": "image\/topic3\/icon4.png",
+                    "p": "<p>Steep price increases occurred in 2017. Scarcity of HFC on the market since media 2017.<\/p>"
+                }],
+                "image": "image\/topic3\/2154785.png"
+            }
+        }, {
+            "type": "text_image",
+            "title": "HFC phase down by sector",
+            "file": "common\/text_image.html",
+            "audio": "media\/topic3_pg10.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": [{
+                "direction": "image_bottom",
+                "p": "<p>\u00a0HVACR contributes to 72% of the phase down in Europe. <\/p>",
+                "image": "image\/topic3\/topic3-g.png"
+            }]
+        }, {
+            "type": "text_image",
+            "title": "GWP and CSA number Global Warming Potential (GWP)",
+            "file": "common\/text_image.html",
+            "audio": "media\/topic3_pg11.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": [{
+                "direction": "text_only",
+                "p": "<p>Global warming potential is a measure of how much a given mass of green house gas is estimated to contribute to global warming.<\/p><p><b>Chemical Abstract Service number (CAS number)<\/b><\/p><p>CAS number is unique numerical identifiers for chemical elements, compounds, polymers, biological sequences, mixtures and alloys.<\/p><p>A CAS registry number is separated by hyphens into three parts, the first consisting of up to 7 digits, the second consisting of two digits, and the third consisting of a single digit serving as a check digit. The numbers are assigned in increasing order and do not have any inherent meaning.<\/p><p>The check digit is calculated by taking the last digit times 1, the next digit times 2, the next digit times 3 etc., adding all these up and computing the sum modular arithmetic 10. For example, the CAS number of water is 7732-18-5: the checksum 5 is calculated as (8\u00d71 + 1\u00d72 + 2\u00d73 + 3\u00d74 + 7\u00d75 + 7\u00d76) = 105; 105 mod 10 = 5.<\/p>",
+                "image": "image\/topic2\/Log(P)-h.png"
+            }]
+        }, {
+            "type": "text_image",
+            "title": "Classification of refrigerants",
+            "file": "common\/text_image.html",
+            "audio": "media\/topic3_pg12.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": [{
+                "direction": "image_bottom",
+                "p": "",
+                "image": "image\/topic3\/flow_chart.png"
+            }]
+        }, {
+            "title": "Refrigerants based on types",
+            "file": "common\/accordion.html",
+            "style": "common\/style\/accordion.css",
+            "audio": "media\/topic3_pg13.mp3",
+            "showMenu": true,
+            "interaction": true,
+            "text": {
+                "t": "<p>Click the below items to learn types of Refrigerants.<\/p>",
+                "interactivity": [{
+                    "title": "Synthetic gases ",
+                    "icon": "image\/icon_1.png",
+                    "image": "",
+                    "reveal": "<p><b>Organic compounds:<\/b><\/p><ul><li>R22 - Chlorodilfluoromethane (HCFC)<\/li><li>R134a - Tetrafluoroethane (HFC)<\/li><\/ul><p><b>Zeotropic mixtures:<\/b><\/p><ul><li>R404 - mix of 3 gases<\/li><li>R407C - mix of 3 gases<\/li><li>R410A - mix of 2 gases<\/li><\/ul><p><b>Azeotropic mixtures:<\/b><\/p><ul><li>R507 - mix of 2 gases<\/li><\/ul>"
+                }, {
+                    "title": "Natural gases",
+                    "icon": "image\/icon_2.png",
+                    "image": "",
+                    "reveal": "<p><b>Organic compounds (Hydrocarbons, HC):<\/b><\/p><ul><li>R290 - Propane<\/li><li>R600 - Butane<\/li><li>R600a - Iso-butane<\/li><\/ul><p><b>Inorganic compounds:<\/b><\/p><ul><li>R717    Ammonia (NH3)<\/li><li>R744    Carbon dioxide (CO2)<\/li><\/ul>"
+                }],
+                "b": "<p><b>Zeotropic mixtures:<\/b> Liquid mixtures which obeys Raoult's law.<\/p><p><b>Azeotropic mixtures:<\/b> An Azeotropic mixture, is a mixture of two or more liquids in such a ratio that its composition cannot be changed by simple distillation.<\/p>"
+            }
+        }, {
+            "title": "Refrigerants in appliances",
+            "file": "common\/accordion.html",
+            "style": "common\/style\/accordion.css",
+            "audio": "media\/topic3_pg14.mp3",
+            "showMenu": true,
+            "interaction": true,
+            "text": {
+                "t": "<p>Refrigerants can be used based on application.<\/p><p>Click <a href='partial\/topic3\/table1.htm' target='_balnk'>here<\/a> to view the list of refrigerants.<\/p><p>EN - European standard, ARI - American standard<\/p><p>Click the below items to learn types of Refrigerants.<\/p>",
+                "interactivity": [{
+                    "title": "High Temp (i.e. Air Conditioning)",
+                    "icon": "image\/icon_1.png",
+                    "direction":"image_right",
+                    "image": "image/topic3/aircondition.jpg",
+                    "reveal": "<p>Evaporator Temperature (standards conditions):<\/p><p><b>EN: +5\u00b0C \/ 41\u00b0F<\/b><br\/><b>ARI +7,2\u00b0C \/ 45\u00b0F\u00a0<\/b><\/p><br\/><ul><li>R22 (mainly Asia pacific &amp; Latin America)<\/li><li>R407C\/R410A (mainly Europe and Middle east &amp; North America)<\/li><\/ul>"
+                }, {
+                    "title": "Medium Temp (i.e. Refrigerator)",
+                    "icon": "image\/icon_2.png",
+                    "direction":"image_right",
+                    "image": "image/topic3/refrigerator.jpg",
+                    "reveal": "<div><p>Evaporator Temperature(standards conditions):<\/p><p><b>EN: -10\u00b0C \/ 14\u00b0F<\/b>\u200b<br><b>ARI -6,7\u00b0C \/ 20\u00b0F\u00a0<\/b><\/p><br\/><ul><li>R22 (mainly Asia pacific &amp; Latin America)<\/li><\/ul><ul><li>R134a\/R404A (mainly Europe and Middle east &amp; North America)<\/li><li>R600a (Household \u2013 Europe and Middle east)<\/li><li>R290 (Europe and Middle east)<\/li><li>R744 <\/li><\/ul>"
+                }, {
+                    "title": "Low Temp (i.e. Freezer)",
+                    "icon": "image\/icon_2.png",
+                    "direction":"image_right",
+                    "image": "image/topic3/freezer.jpg",
+                    "reveal": "<p>Evaporator Temperature (standards conditions):<\/p><p><b>EN: -35\u00b0C \/ -31\u00b0F<\/b><br\/><b>ARI -31,7\u00b0C \/ -25\u00b0F<\/b>\u00a0<\/p><br\/><ul><li>\u00a0R22 (mainly Asia pacific &amp; Latin America))<\/li><li>R404A (mainly Europe and Middle east &amp; North America)<\/li><li>R507<\/li><li>R600a (Household \u2013 Europe and Middle east)<\/li><li>R290 (Europe and Middle east)<\/li><\/ul><\/div>"
+                }]
+            }
+        }, {
+            "type": "recap",
+            "title": "Recap",
+            "file": "common\/recap.html",
+            "style": "common\/style\/objective.css",
+            "audio": "media\/topic3_pg15.mp3",
+            "showMenu": true,
+            "interaction": false,
+            "text": "<p>Let us recall:<\/p><ul><li>Refrigerants are substances used in heat cycle which undergoes reversible phase change from liquid to gas or vapour.<\/li><li>An ideal refrigerant should have good thermodynamic properties.<\/li><li>The glide will have consequences for the superheat setting and for the evaporation temperature.<\/li><li>Global warming potential is a measure of how much a given mass of green house gas is estimated to contribute to global warming.<\/li><li>CAS number is unique numerical identifiers for chemical elements, compounds, polymers, biological sequences, mixtures and alloys.<\/li><\/ul>",
+            "info": {
+                "title": "Alert",
+                "text": "Please complete all pages to view the recap and complete the course."
+            }
+        }]
+    }
+}

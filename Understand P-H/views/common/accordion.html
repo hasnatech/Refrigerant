@@ -1,0 +1,151 @@
+<section class="sec" data-current="{{curr_page}}">
+    <div class="container_full">
+
+        <!-- <div class="easyzoom easyzoom--overlay easyzoom--with-toggle">
+            <a href="image/topic1/refrigeration_t1_t2.png">
+                <img src="image/topic1/refrigeration_t1_t2.png" alt="" width="50%" />
+            </a>
+        </div> -->
+        <!--
+            <button class="toggle" data-active="true">Switch off</button>
+        -->
+        <div class="init_padding">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class=" animate">
+                        <!-- <p class="page_no">Page {{curr_page+1}} of {{total_page}}</p> -->
+                        <h2>{{page.title}}</h2>
+                        <hr class="hr_width">
+                    </div>
+                    <div class="animate">
+                        <div ng-bind-html="page.text.t | to_trusted"></div>
+
+                        <div class="accordion">
+                            <div ng-repeat="item in page.text.interactivity">
+                                <div class="title" data-audio="{{item.audio}}">
+                                    {{item.title}}
+                                </div>
+                                <div ng-if="item.direction != 'image_right'" class="body">
+                                    <div ng-bind-html="item.reveal | to_trusted"></div>
+                                    <div class="text_center xs-full-image">
+                                        <img ng-if="item.image" ng-src="{{item.image}}" alt="">
+                                        <iframe data-wid="{{item.partial.width}}" data-height="{{item.partial.height}}"
+                                            class="ifrm no-border border-image" width="100%" ng-if="item.partial"
+                                            ng-src="{{item.partial.file}}"></iframe>
+                                    </div>
+                                </div>
+
+                                <div ng-if="item.direction == 'image_right'" class="body">
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <div ng-bind-html="item.reveal | to_trusted"></div>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <div class="text_center xs-full-image padding_tb">
+                                                <img ng-if="item.image" ng-src="{{item.image}}" class="border-image"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div ng-bind-html="page.text.b | to_trusted"></div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="plugins/easyzoom/easyzoom.js"></script>
+<script>
+    $().ready(function () {
+        animate();
+        $(".bottom_nav").fadeOut();
+        var next_appears = false;
+
+        $(".accordion .title").click(function () {
+
+            if ($(this).hasClass("active") == false) {
+                $(".accordion .title").removeClass("active");
+                $(".accordion .body").hide();
+                $(this).addClass("active");
+                $(this).data("clicked", true);
+                $(this).parent().find(".body").slideDown(500, function () {
+                    $(window).resize();
+                });
+                var finish_count = 0;
+
+                var audio = $(this).attr("data-audio");
+                console.log("audio", audio);
+                if (audio != "") {
+                    playAudio(audio);
+                }
+                $(".accordion .title").each(function () {
+                    if ($(this).data("clicked") == true) {
+                        finish_count++;
+                    }
+                    /* if (finish_count == $(".accordion .title").length && next_appears == false) {
+                         appear($(".bottom_nav"), 1000);
+                         next_appears = true;
+                         pageCompleted($(".sec").data("current"));
+                     }*/
+                });
+            } else {
+                $(this).removeClass("active");
+                $(this).parent().find(".body").slideUp(500);
+            }
+        });
+
+        $(".xs-full-image").click(function () {
+
+            if (screen.width <= 768) {
+
+                var src = $(this).find("img").attr("src");
+                console.log(screen.width, src);
+                if (src != "")
+                    showFullImage(src);
+            }
+        });
+        showNext(default_delay);
+
+        var i = 0;
+        var maxWidth = new Array();
+        var maxHeight = new Array();
+        var frames = new Array();
+
+        $(".ifrm").each(function () {
+            frames[i] = $(this);
+            maxWidth[i] = $(this).attr("data-wid");
+            maxHeight[i] = $(this).attr("data-height");
+            //console.log(maxWidth[i], maxHeight[i]);
+            i++;
+        });
+        var j = 0;
+        $(window).resize(function () {
+            j = 0;
+            $(".ifrm").each(function () {
+                setTimeout(function () {
+
+                    if (frames.length > 0) {
+                        frames[j].css("max-width", maxWidth[j] + "px");
+                        var width = frames[j].width();
+
+                        var height = width * maxHeight[j] / maxWidth[j];
+                        console.log(frames.length, maxWidth[j], maxHeight[j], width,
+                            height);
+                        frames[j].height(height);
+                    }
+                    j++;
+                }, 550 + (j * 10));
+
+            });
+        });
+        $(window).resize();
+    });
+</script>

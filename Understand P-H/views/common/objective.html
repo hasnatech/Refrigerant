@@ -1,0 +1,21 @@
+<section class="sec" data-current="{{curr_page}}">
+	<div class="objective">
+		<br>
+		<div id="obj_panel" class="panel">
+			<div class="animate" data-animfrom="right">
+				<h2>{{page.title}}</h2>
+				<hr class="hr_width">
+			</div>
+			<div class="animate" data-animfrom="right">
+					<div ng-bind-html="page.text | to_trusted"></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<script>
+	$().ready(function () {
+		animate();
+		showNext(default_delay);
+	});
+</script>

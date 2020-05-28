@@ -1,0 +1,11 @@
+.icon {
+    min-height: 80px;
+}
+
+.icon .img {
+    float: left;
+}
+
+.icon .txt {
+    margin: 10px 10px 10px 90px;
+}
